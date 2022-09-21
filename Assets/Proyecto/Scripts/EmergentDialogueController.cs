@@ -86,7 +86,6 @@ public class EmergentDialogueController : MonoBehaviour
     {
         for(int i = 0; i < t.Length; i++)
         {
-            Debug.Log("Hola");
             currentText = t.Substring(0, i+1);
             text.text = currentText;
             yield return new WaitForSeconds(textDelay);
