@@ -31,13 +31,13 @@ public class ChangeWorldController : MonoBehaviour
     {
         goodWorld.SetActive(true);
         badWorld.SetActive(false);
-        Debug.Log("Bueno");
+        //Debug.Log("Bueno");
     }
 
     void SendBadMessage()
     {
         goodWorld.SetActive(false);
         badWorld.SetActive(true);
-        Debug.Log("Malo");
+        //Debug.Log("Malo");
     }
 }
