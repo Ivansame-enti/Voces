@@ -202,6 +202,7 @@ GameObject:
   - component: {fileID: 577608807}
   - component: {fileID: 577608806}
   - component: {fileID: 577608805}
+  - component: {fileID: 577608809}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -285,6 +286,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &577608809
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 577608804}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2a188edfd3e3a24b8c6a0d40c977d19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &972829002
 GameObject:
   m_ObjectHideFlags: 0
@@ -334,6 +347,20 @@ MonoBehaviour:
     volume: 0.2
     pitch: 1
     loop: 1
+    audioMixer: {fileID: 24300002, guid: 5c46ff0320e13204ea78c052fa291094, type: 2}
+    source: {fileID: 0}
+  - name: Glitch sound
+    clip: {fileID: 8300000, guid: d00c386eb1ea19e4baed83a3f41f9acc, type: 3}
+    volume: 0.05
+    pitch: 1
+    loop: 0
+    audioMixer: {fileID: 24300002, guid: 5c46ff0320e13204ea78c052fa291094, type: 2}
+    source: {fileID: 0}
+  - name: FootSteps
+    clip: {fileID: 8300000, guid: 720f0172d43f3324a9e67c628ebec10e, type: 3}
+    volume: 0.05
+    pitch: 1
+    loop: 0
     audioMixer: {fileID: 24300002, guid: 5c46ff0320e13204ea78c052fa291094, type: 2}
     source: {fileID: 0}
 --- !u!1 &1321253449
