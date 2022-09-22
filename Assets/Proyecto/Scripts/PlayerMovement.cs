@@ -20,14 +20,16 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float _jumpForce = 300;
 
     void Update()
-        {
-            var vel = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical")) * _speed;
-            vel.y = _rb.velocity.y;
-            _rb.velocity = vel;
-            //Debug.Log(vel);
-            if((vel.x!=0 || vel.z!=0) && !amc.GetAudioPlaying("FootSteps")) amc.AudioPlay("FootSteps");
-            else if((vel.x != 0 && vel.z != 0) && amc.GetAudioPlaying("FootSteps")) amc.AudioStop("FootSteps");
+    {
+        var vel = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical")) * _speed;
+        vel.y = _rb.velocity.y;
+        _rb.velocity = vel;
+        if((Input.GetAxis("Horizontal")!=0 || Input.GetAxis("Vertical")!=0) && !amc.GetAudioPlaying("FootSteps")) amc.AudioPlay("FootSteps");
+        else if ((Input.GetAxis("Horizontal") == 0 && Input.GetAxis("Vertical") == 0) && amc.GetAudioPlaying("FootSteps")) amc.AudioStop("FootSteps");
+        //Debug.Log(vel);
+        //if ((vel.x!=0 || vel.z!=0) && !amc.GetAudioPlaying("FootSteps")) amc.AudioPlay("FootSteps");
+        //else if((vel.x != 0 && vel.z != 0) && amc.GetAudioPlaying("FootSteps")) amc.AudioStop("FootSteps");
         if (Input.GetKeyDown(KeyCode.Space)) _rb.AddForce(Vector3.up * _jumpForce);
-        }
     }
+}
     

@@ -351,14 +351,14 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: Glitch sound
     clip: {fileID: 8300000, guid: d00c386eb1ea19e4baed83a3f41f9acc, type: 3}
-    volume: 0.05
+    volume: 0.03
     pitch: 1
     loop: 0
     audioMixer: {fileID: 24300002, guid: 5c46ff0320e13204ea78c052fa291094, type: 2}
     source: {fileID: 0}
   - name: FootSteps
     clip: {fileID: 8300000, guid: 720f0172d43f3324a9e67c628ebec10e, type: 3}
-    volume: 0.05
+    volume: 0.03
     pitch: 1
     loop: 0
     audioMixer: {fileID: 24300002, guid: 5c46ff0320e13204ea78c052fa291094, type: 2}
