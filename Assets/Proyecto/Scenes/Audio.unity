@@ -344,21 +344,70 @@ MonoBehaviour:
   audios:
   - name: MainTheme
     clip: {fileID: 8300000, guid: 7e0b80a2c716ef144b0b24f906d3103e, type: 3}
-    volume: 0.2
+    volume: 0.15
     pitch: 1
     loop: 1
     audioMixer: {fileID: 24300002, guid: 5c46ff0320e13204ea78c052fa291094, type: 2}
     source: {fileID: 0}
   - name: Glitch sound
     clip: {fileID: 8300000, guid: d00c386eb1ea19e4baed83a3f41f9acc, type: 3}
-    volume: 0.03
+    volume: 0.02
     pitch: 1
     loop: 0
     audioMixer: {fileID: 24300002, guid: 5c46ff0320e13204ea78c052fa291094, type: 2}
     source: {fileID: 0}
   - name: FootSteps
     clip: {fileID: 8300000, guid: 720f0172d43f3324a9e67c628ebec10e, type: 3}
-    volume: 0.03
+    volume: 0.02
+    pitch: 1
+    loop: 0
+    audioMixer: {fileID: 24300002, guid: 5c46ff0320e13204ea78c052fa291094, type: 2}
+    source: {fileID: 0}
+  - name: Dialogue1
+    clip: {fileID: 8300000, guid: 18567b53c95de3742bfec74ecd75b02d, type: 3}
+    volume: 0.02
+    pitch: 1
+    loop: 0
+    audioMixer: {fileID: 24300002, guid: 5c46ff0320e13204ea78c052fa291094, type: 2}
+    source: {fileID: 0}
+  - name: Dialogue2
+    clip: {fileID: 8300000, guid: 689aee410f1bcc64aba722f0c570364f, type: 3}
+    volume: 0.02
+    pitch: 1
+    loop: 0
+    audioMixer: {fileID: 24300002, guid: 5c46ff0320e13204ea78c052fa291094, type: 2}
+    source: {fileID: 0}
+  - name: Dialogue3
+    clip: {fileID: 8300000, guid: 408a2eb18a7056243af02e8e34ef7f35, type: 3}
+    volume: 0.02
+    pitch: 1
+    loop: 0
+    audioMixer: {fileID: 24300002, guid: 5c46ff0320e13204ea78c052fa291094, type: 2}
+    source: {fileID: 0}
+  - name: Dialogue4
+    clip: {fileID: 8300000, guid: 9693e5d81fb1f7f4383bb5481f770443, type: 3}
+    volume: 0.02
+    pitch: 1
+    loop: 0
+    audioMixer: {fileID: 24300002, guid: 5c46ff0320e13204ea78c052fa291094, type: 2}
+    source: {fileID: 0}
+  - name: Door
+    clip: {fileID: 8300000, guid: 18b71fe59c83860438a89ae6764c8442, type: 3}
+    volume: 0.02
+    pitch: 1
+    loop: 0
+    audioMixer: {fileID: 24300002, guid: 5c46ff0320e13204ea78c052fa291094, type: 2}
+    source: {fileID: 0}
+  - name: Button
+    clip: {fileID: 8300000, guid: fe8b9757f7599524f9971a60989ce37b, type: 3}
+    volume: 0.02
+    pitch: 1
+    loop: 0
+    audioMixer: {fileID: 24300002, guid: 5c46ff0320e13204ea78c052fa291094, type: 2}
+    source: {fileID: 0}
+  - name: Box
+    clip: {fileID: 8300000, guid: bb375b9729a6e064398fd56e2e988bf9, type: 3}
+    volume: 0.02
     pitch: 1
     loop: 0
     audioMixer: {fileID: 24300002, guid: 5c46ff0320e13204ea78c052fa291094, type: 2}
