@@ -26,18 +26,14 @@ public class SwitchController : MonoBehaviour
     }
     private void OnCollisionEnter(Collision collision)
     {
-        if(collision.gameObject.tag == "Player")
+        if(collision.gameObject.tag == "Player" || collision.gameObject.tag == "Box")
         {
             kgOn = true;
         }
-        else if(collision.gameObject.tag == "Box")
-        {
-            kgOn = true;
-        }
-        else
-        {
-            kgOn = false;
-        }
+    }
+    private void OnCollisionExit(Collision collision)
+    {
+        kgOn = false;
     }
 
 }
