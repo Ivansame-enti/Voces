@@ -13,10 +13,12 @@ public class ChangeWorldController : MonoBehaviour
     private float timer;
     public float changeCD;
     private bool goodWorldBool;
+    private AudioManagerController amc;
 
     // Start is called before the first frame update
     void Start()
     {
+        amc = FindObjectOfType<AudioManagerController>();
         goodWorldBool = true;
         dg = mainCamera.GetComponent<DigitalGlitch>();
         ag = mainCamera.GetComponent<AnalogGlitch>();
@@ -30,6 +32,7 @@ public class ChangeWorldController : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.LeftShift) && !goodWorldBool)
             {
+                amc.AudioPlay("Glitch sound");
                 StartCoroutine(GoodGlitchEffect());
                 timer = 0;
                 goodWorldBool = true;
@@ -38,6 +41,7 @@ public class ChangeWorldController : MonoBehaviour
 
             if (Input.GetKeyDown(KeyCode.LeftControl) && goodWorldBool)
             {
+                amc.AudioPlay("Glitch sound");
                 StartCoroutine(BadGlitchEffect());
                 timer = 0;
                 goodWorldBool = false;
@@ -47,7 +51,7 @@ public class ChangeWorldController : MonoBehaviour
         else timer += Time.deltaTime;
     }
 
-    void SendGoodMessage()
+   /* void SendGoodMessage()
     {
         StartCoroutine(GoodGlitchEffect());
         
@@ -59,7 +63,7 @@ public class ChangeWorldController : MonoBehaviour
         goodWorld.SetActive(false);
         badWorld.SetActive(true);
         //Debug.Log("Malo");
-    }
+    }*/
 
     IEnumerator GoodGlitchEffect()
     {
@@ -80,6 +84,7 @@ public class ChangeWorldController : MonoBehaviour
         ag.colorDrift = 0;
         goodWorld.SetActive(true);
         badWorld.SetActive(false);
+        amc.ChangePitch("MainTheme", 1.0f);
     }
 
     IEnumerator BadGlitchEffect()
@@ -101,5 +106,6 @@ public class ChangeWorldController : MonoBehaviour
         ag.colorDrift = 0;
         goodWorld.SetActive(false);
         badWorld.SetActive(true);
+        amc.ChangePitch("MainTheme", 0.3f);
     }
 }
