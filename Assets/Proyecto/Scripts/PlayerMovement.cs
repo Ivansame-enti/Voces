@@ -9,23 +9,27 @@ public class PlayerMovement : MonoBehaviour
     private float jumpHeight = 1.0f;
     private float gravityValue = -9.81f;
     public Animator animator;
+    private AudioManagerController amc;
     private void Start()
     {
-
+        amc = FindObjectOfType<AudioManagerController>();
     }
 
     [SerializeField] private float _speed = 1;
     [SerializeField] private Rigidbody _rb;
 
     void Update()
-        {
+    {
             var vel = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical")) * _speed;
             vel.y = _rb.velocity.y;
             _rb.velocity = vel;
 
+        if ((Input.GetAxis("Horizontal") != 0 || Input.GetAxis("Vertical") != 0) && !amc.GetAudioPlaying("FootSteps")) amc.AudioPlay("FootSteps");
+        else if ((Input.GetAxis("Horizontal") == 0 && Input.GetAxis("Vertical") == 0) && amc.GetAudioPlaying("FootSteps")) amc.AudioStop("FootSteps");
+
         animator.SetFloat("Horizontal",vel.x);
         animator.SetFloat("Vertical", vel.z);
         animator.SetFloat("Magnitude", vel.magnitude);
-        }
     }
+}
     
