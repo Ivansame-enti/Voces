@@ -14,10 +14,12 @@ public class ChangeWorldController : MonoBehaviour
     public float changeCD;
     private bool goodWorldBool;
     private AudioManagerController amc;
+    private EmergentDialogueController ed;
 
     // Start is called before the first frame update
     void Start()
     {
+        ed = FindObjectOfType<EmergentDialogueController>();
         amc = FindObjectOfType<AudioManagerController>();
         goodWorldBool = true;
         dg = mainCamera.GetComponent<DigitalGlitch>();
@@ -32,38 +34,63 @@ public class ChangeWorldController : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.LeftShift) && !goodWorldBool)
             {
-                amc.AudioPlay("Glitch sound");
-                StartCoroutine(GoodGlitchEffect());
-                timer = 0;
-                goodWorldBool = true;
+                StartCoroutine(waiter1());
+                
                 //SendGoodMessage();
             }
 
             if (Input.GetKeyDown(KeyCode.LeftControl) && goodWorldBool)
             {
+                StartCoroutine(waiter2());
+                /*
+                ed.BadDialogue();
                 amc.AudioPlay("Glitch sound");
                 StartCoroutine(BadGlitchEffect());
                 timer = 0;
-                goodWorldBool = false;
+                goodWorldBool = false;*/
                 //SendBadMessage();
             }
         }
         else timer += Time.deltaTime;
     }
 
-   /* void SendGoodMessage()
+    /* void SendGoodMessage()
+     {
+         StartCoroutine(GoodGlitchEffect());
+
+         //Debug.Log("Bueno");
+     }
+
+     void SendBadMessage()
+     {
+         goodWorld.SetActive(false);
+         badWorld.SetActive(true);
+         //Debug.Log("Malo");
+     }*/
+
+    IEnumerator waiter1()
     {
-        StartCoroutine(GoodGlitchEffect());
+        ed.GoodDialogue();
+
+        yield return new WaitForSeconds(2);
         
-        //Debug.Log("Bueno");
+        amc.AudioPlay("Glitch sound");
+        StartCoroutine(GoodGlitchEffect());
+        timer = 0;
+        goodWorldBool = true;
     }
 
-    void SendBadMessage()
+    IEnumerator waiter2()
     {
-        goodWorld.SetActive(false);
-        badWorld.SetActive(true);
-        //Debug.Log("Malo");
-    }*/
+        ed.BadDialogue();
+
+        yield return new WaitForSeconds(2);
+        
+        amc.AudioPlay("Glitch sound");
+        StartCoroutine(BadGlitchEffect());
+        timer = 0;
+        goodWorldBool = false;
+    }
 
     IEnumerator GoodGlitchEffect()
     {

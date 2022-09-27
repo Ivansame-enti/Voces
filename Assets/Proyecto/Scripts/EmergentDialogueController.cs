@@ -17,6 +17,25 @@ public class EmergentDialogueController : MonoBehaviour
     private string currentText = "";
     private AudioManagerController amc;
     private float randomDialogueSound;
+    private string[] randomGoodDialogue = new string[] {
+        "Te queremos hijo", 
+        "Recuperate pronto", 
+        "Hola Lucas!",
+        "El medico ha dicho que estas mejorando",
+        "Tu abuelo te da recuerdos",
+        "Juguemos a futbol cuando salgas de aqui"
+    };
+
+    private string[] randomBadDialogue = new string[] {
+        "Ojala no despiertes",
+        "Lamentablemente su hijo no se recuperara",
+        "Siempre te odie",
+        "Lucas esta sangrando de nuevo!",
+        "Sus resultados no son buenos",
+        "No fuiste deseado"
+    };
+
+    int random;
 
 
     // Start is called before the first frame update
@@ -59,6 +78,16 @@ public class EmergentDialogueController : MonoBehaviour
         }
     }
 
+    public void GoodDialogue()
+    {
+        this.GetComponent<RectTransform>().anchoredPosition = new Vector3(Random.Range(-290.0f, 304.0f), Random.Range(-147.0f, 123.0f), 0);
+        random = Random.Range(0, randomGoodDialogue.Length);
+        StartCoroutine(ShowText(randomGoodDialogue[random]));
+        textBox.sprite = goodDialog;
+        //text.text = t;
+        this.gameObject.transform.GetChild(0).gameObject.GetComponent<Animator>().Play("Dialogue", 0, 0.0f);
+    }
+
     public void GoodDialogue(string t)
     {
         this.GetComponent<RectTransform>().anchoredPosition = new Vector3(Random.Range(-290.0f, 304.0f), Random.Range(-147.0f, 123.0f), 0);
@@ -73,6 +102,16 @@ public class EmergentDialogueController : MonoBehaviour
         this.GetComponent<RectTransform>().anchoredPosition = new Vector3(Random.Range(-290.0f, 304.0f), Random.Range(-147.0f, 123.0f), 0);
         StartCoroutine(ShowText(t));
         textBox.sprite = normalDialog;
+        //text.text = t;
+        this.gameObject.transform.GetChild(0).gameObject.GetComponent<Animator>().Play("Dialogue", 0, 0.0f);
+    }
+
+    public void BadDialogue()
+    {
+        this.GetComponent<RectTransform>().anchoredPosition = new Vector3(Random.Range(-290.0f, 304.0f), Random.Range(-147.0f, 123.0f), 0);
+        random = Random.Range(0, randomBadDialogue.Length);
+        StartCoroutine(ShowText(randomBadDialogue[random]));
+        textBox.sprite = badDialog;
         //text.text = t;
         this.gameObject.transform.GetChild(0).gameObject.GetComponent<Animator>().Play("Dialogue", 0, 0.0f);
     }
