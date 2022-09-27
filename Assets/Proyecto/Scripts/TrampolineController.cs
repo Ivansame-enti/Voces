@@ -26,6 +26,7 @@ public class TrampolineController : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
             playerRb.AddForce(jump, ForceMode.Impulse);
+
         }
         if (collision.gameObject.tag == "Box")
         {

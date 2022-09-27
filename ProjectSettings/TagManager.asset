@@ -7,11 +7,12 @@ TagManager:
   - PushButton
   tags:
   - Box
+  - EmergentDialogue
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - PostProcessing
   - Water
   - UI
   - 
