@@ -30,7 +30,6 @@ public class PlayerInteraction : MonoBehaviour
         {
             if (Input.GetKey(KeyCode.Space) && !hasPush)
             {
-                //Debug.Log("B");
                 platform.SetActive(false);
                 hasPush = true;
             }
