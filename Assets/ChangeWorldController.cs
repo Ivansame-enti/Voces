@@ -94,6 +94,7 @@ public class ChangeWorldController : MonoBehaviour
 
     IEnumerator GoodGlitchEffect()
     {
+        ag.enabled = true;
         for (float alpha = 0f; alpha <= 0.7; alpha += 0.1f)
         {
             dg.intensity = alpha;
@@ -109,6 +110,7 @@ public class ChangeWorldController : MonoBehaviour
         ag.verticalJump = 0;
         ag.horizontalShake = 0;
         ag.colorDrift = 0;
+        ag.enabled = false;
         goodWorld.SetActive(true);
         badWorld.SetActive(false);
         amc.ChangePitch("MainTheme", 1.0f);
@@ -116,6 +118,7 @@ public class ChangeWorldController : MonoBehaviour
 
     IEnumerator BadGlitchEffect()
     {
+        ag.enabled = true;
         for (float alpha = 0f; alpha <= 0.7; alpha += 0.1f)
         {
             dg.intensity = alpha;
@@ -131,6 +134,7 @@ public class ChangeWorldController : MonoBehaviour
         ag.verticalJump = 0;
         ag.horizontalShake = 0;
         ag.colorDrift = 0;
+        ag.enabled = false;
         goodWorld.SetActive(false);
         badWorld.SetActive(true);
         amc.ChangePitch("MainTheme", 0.3f);
