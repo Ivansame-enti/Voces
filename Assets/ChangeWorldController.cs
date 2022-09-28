@@ -34,6 +34,7 @@ public class ChangeWorldController : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.LeftShift) && !goodWorldBool)
             {
+                timer = 0;
                 StartCoroutine(waiter1());
                 
                 //SendGoodMessage();
@@ -41,6 +42,7 @@ public class ChangeWorldController : MonoBehaviour
 
             if (Input.GetKeyDown(KeyCode.LeftControl) && goodWorldBool)
             {
+                timer = 0;
                 StartCoroutine(waiter2());
                 /*
                 ed.BadDialogue();
@@ -75,8 +77,7 @@ public class ChangeWorldController : MonoBehaviour
         yield return new WaitForSeconds(2);
         
         amc.AudioPlay("Glitch sound");
-        StartCoroutine(GoodGlitchEffect());
-        timer = 0;
+        StartCoroutine(GoodGlitchEffect());        
         goodWorldBool = true;
     }
 
@@ -88,12 +89,12 @@ public class ChangeWorldController : MonoBehaviour
         
         amc.AudioPlay("Glitch sound");
         StartCoroutine(BadGlitchEffect());
-        timer = 0;
         goodWorldBool = false;
     }
 
     IEnumerator GoodGlitchEffect()
     {
+        ag.enabled = true;
         for (float alpha = 0f; alpha <= 0.7; alpha += 0.1f)
         {
             dg.intensity = alpha;
@@ -109,6 +110,7 @@ public class ChangeWorldController : MonoBehaviour
         ag.verticalJump = 0;
         ag.horizontalShake = 0;
         ag.colorDrift = 0;
+        ag.enabled = false;
         goodWorld.SetActive(true);
         badWorld.SetActive(false);
         amc.ChangePitch("MainTheme", 1.0f);
@@ -116,6 +118,7 @@ public class ChangeWorldController : MonoBehaviour
 
     IEnumerator BadGlitchEffect()
     {
+        ag.enabled = true;
         for (float alpha = 0f; alpha <= 0.7; alpha += 0.1f)
         {
             dg.intensity = alpha;
@@ -131,6 +134,7 @@ public class ChangeWorldController : MonoBehaviour
         ag.verticalJump = 0;
         ag.horizontalShake = 0;
         ag.colorDrift = 0;
+        ag.enabled = false;
         goodWorld.SetActive(false);
         badWorld.SetActive(true);
         amc.ChangePitch("MainTheme", 0.3f);
