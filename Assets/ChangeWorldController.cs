@@ -34,6 +34,7 @@ public class ChangeWorldController : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.LeftShift) && !goodWorldBool)
             {
+                timer = 0;
                 StartCoroutine(waiter1());
                 
                 //SendGoodMessage();
@@ -41,6 +42,7 @@ public class ChangeWorldController : MonoBehaviour
 
             if (Input.GetKeyDown(KeyCode.LeftControl) && goodWorldBool)
             {
+                timer = 0;
                 StartCoroutine(waiter2());
                 /*
                 ed.BadDialogue();
@@ -75,8 +77,7 @@ public class ChangeWorldController : MonoBehaviour
         yield return new WaitForSeconds(2);
         
         amc.AudioPlay("Glitch sound");
-        StartCoroutine(GoodGlitchEffect());
-        timer = 0;
+        StartCoroutine(GoodGlitchEffect());        
         goodWorldBool = true;
     }
 
@@ -88,7 +89,6 @@ public class ChangeWorldController : MonoBehaviour
         
         amc.AudioPlay("Glitch sound");
         StartCoroutine(BadGlitchEffect());
-        timer = 0;
         goodWorldBool = false;
     }
 
