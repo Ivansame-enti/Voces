@@ -49,7 +49,8 @@ public class PlayerPushBoxController : MonoBehaviour
 
                 if (Physics.Raycast(ray, out hit, distance) && hit.transform.tag == "Box" && Input.GetKey(KeyCode.Space))
                 {
-                    Debug.Log(hit.distance);
+                    cubeGrabbed = true;
+                    //Debug.Log(hit.distance);
                 }
             }
             else if (Input.GetAxis("Horizontal") < 0)
@@ -58,7 +59,8 @@ public class PlayerPushBoxController : MonoBehaviour
 
                 if (Physics.Raycast(ray2, out hit, distance) && hit.transform.tag == "Box" && Input.GetKey(KeyCode.Space))
                 {
-                    Debug.Log(hit.distance);
+                    cubeGrabbed = true;
+                    //Debug.Log(hit.distance);
                 }
             }
             else if (Input.GetAxis("Vertical") < 0)
@@ -67,7 +69,8 @@ public class PlayerPushBoxController : MonoBehaviour
 
                 if (Physics.Raycast(ray3, out hit, distance) && hit.transform.tag == "Box" && Input.GetKey(KeyCode.Space))
                 {
-                    Debug.Log(hit.distance);
+                    cubeGrabbed = true;
+                    //Debug.Log(hit.distance);
                 }
             }
             else if (Input.GetAxis("Vertical") > 0)
@@ -76,7 +79,8 @@ public class PlayerPushBoxController : MonoBehaviour
 
                 if (Physics.Raycast(ray4, out hit, distance) && hit.transform.tag == "Box" && Input.GetKey(KeyCode.Space))
                 {
-                    Debug.Log(hit.distance);
+                    cubeGrabbed = true;
+                    //Debug.Log(hit.distance);
                 }
             }
             else
