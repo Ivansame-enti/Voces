@@ -4,10 +4,7 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    private Vector3 playerVelocity;
-    private float playerSpeed = 2.0f;
-    private float jumpHeight = 1.0f;
-    private float gravityValue = -9.81f;
+    public float _speed = 1;
     public Animator animator;
     private AudioManagerController amc;
     private void Start()
@@ -15,7 +12,7 @@ public class PlayerMovement : MonoBehaviour
         amc = FindObjectOfType<AudioManagerController>();
     }
 
-    [SerializeField] private float _speed = 1;
+    
     [SerializeField] private Rigidbody _rb;
 
     void Update()
