@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerPushBoxController : MonoBehaviour
 {
     public float distance;
-    public LayerMask layerMask;
+    //public LayerMask layerMask;
     //bool hit;
     GameObject box;
     Transform thingToPull;
