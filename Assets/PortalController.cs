@@ -7,6 +7,7 @@ public class PortalController : MonoBehaviour
     public ChangeWorldController cwd;
     public GameObject goodWorld;
     public GameObject badWorld;
+    public ChangeWorldController changeWorld;
     // Start is called before the first frame update
     void Start()
     {
@@ -31,6 +32,13 @@ public class PortalController : MonoBehaviour
             }
             else collision.gameObject.transform.parent = goodWorld.transform;
             collision.gameObject.transform.position = new Vector3(collision.gameObject.transform.position.x, collision.gameObject.transform.position.y, collision.gameObject.transform.position.z - 1.5f);
-        }       
+        }
+        
+        if(collision.gameObject.tag == "Player")
+        {
+            changeWorld.changeWorld = true;
+            //collision.gameObject.transform.position = new Vector3(collision.gameObject.transform.position.x, collision.gameObject.transform.position.y, collision.gameObject.transform.position.z - 1.5f);
+            
+        }
     }
 }
