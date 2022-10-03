@@ -12,7 +12,7 @@ public class ChangeWorldController : MonoBehaviour
     private AnalogGlitch ag;
     private float timer;
     public float changeCD;
-    private bool goodWorldBool;
+    public bool goodWorldBool;
     private AudioManagerController amc;
     private EmergentDialogueController ed;
 
