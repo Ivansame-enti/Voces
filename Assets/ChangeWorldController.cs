@@ -12,9 +12,11 @@ public class ChangeWorldController : MonoBehaviour
     private AnalogGlitch ag;
     private float timer;
     public float changeCD;
-    private bool goodWorldBool;
+    public bool goodWorldBool;
     private AudioManagerController amc;
     private EmergentDialogueController ed;
+    public PortalController portalController;
+    public bool changeWorld;
 
     // Start is called before the first frame update
     void Start()
@@ -36,7 +38,7 @@ public class ChangeWorldController : MonoBehaviour
             {
                 timer = 0;
                 StartCoroutine(waiter1());
-                
+
                 //SendGoodMessage();
             }
 
@@ -44,6 +46,8 @@ public class ChangeWorldController : MonoBehaviour
             {
                 timer = 0;
                 StartCoroutine(waiter2());
+             
+                
                 /*
                 ed.BadDialogue();
                 amc.AudioPlay("Glitch sound");
@@ -51,6 +55,21 @@ public class ChangeWorldController : MonoBehaviour
                 timer = 0;
                 goodWorldBool = false;*/
                 //SendBadMessage();
+            }
+            if(changeWorld == true)
+            {
+                changeWorld = false;
+                if (goodWorldBool == true)
+                {
+                    StartCoroutine(BadGlitchEffect());
+                    goodWorldBool = false;
+                }
+                else
+                {
+                    StartCoroutine(GoodGlitchEffect());
+                    goodWorldBool = true;
+                }
+
             }
         }
         else timer += Time.deltaTime;
