@@ -10,6 +10,7 @@ public class PlayerMovement : MonoBehaviour
     private float gravityValue = -9.81f;
     public Animator animator;
     private AudioManagerController amc;
+   
     private void Start()
     {
         amc = FindObjectOfType<AudioManagerController>();
@@ -17,6 +18,7 @@ public class PlayerMovement : MonoBehaviour
 
     [SerializeField] private float _speed = 1;
     [SerializeField] private Rigidbody _rb;
+
 
     void Update()
     {
@@ -30,6 +32,10 @@ public class PlayerMovement : MonoBehaviour
         animator.SetFloat("Horizontal",vel.x);
         animator.SetFloat("Vertical", vel.z);
         animator.SetFloat("Magnitude", vel.magnitude);
+
     }
+
 }
+
+
     
