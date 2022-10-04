@@ -21,6 +21,6 @@ public class MiniLevelController : MonoBehaviour
     void Update()
     {
         if (player.position.y < -10.0f) player.position = respawn.position;
-        if (sw1.isPressed && sw2.isPressed && sw3.isPressed) SceneManager.LoadScene("Victory");
+       // if (sw1.isPressed && sw2.isPressed && sw3.isPressed) SceneManager.LoadScene("Victory");
     }
 }

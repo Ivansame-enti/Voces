@@ -17,11 +17,11 @@ public class PlayerPushBoxController : MonoBehaviour
     bool cubeGrabbed=false;
     PlayerMovement pm;
     float originalVelocity;
-    float pullSpeed;
+    public float pullSpeed;
     // Start is called before the first frame update
     void Start()
     {
-        pullSpeed = 10.0f;
+        //pullSpeed = 10.0f;
         pm = this.GetComponent<PlayerMovement>();
         originalVelocity = pm._speed;
     }
