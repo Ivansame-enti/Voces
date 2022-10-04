@@ -31,7 +31,7 @@ public class ObstacleController : MonoBehaviour
             
             if (hit.collider.gameObject.tag != "Player")
             {
-                Debug.Log("Holaaa");
+                //Debug.Log("Holaaa");
                 obstacle.gameObject.GetComponent<MeshRenderer>().shadowCastingMode = UnityEngine.Rendering.ShadowCastingMode.On;
                 obstacle = hit.transform;
                 obstacle.gameObject.GetComponent<MeshRenderer>().shadowCastingMode = UnityEngine.Rendering.ShadowCastingMode.ShadowsOnly;
@@ -43,7 +43,7 @@ public class ObstacleController : MonoBehaviour
                 }*/
             } else
             {
-                Debug.Log("A2");
+                //Debug.Log("A2");
                 obstacle.gameObject.GetComponent<MeshRenderer>().shadowCastingMode = UnityEngine.Rendering.ShadowCastingMode.On;
                 /*if(Vector3.Distance(transform.position, player.position) >= 1.5f)
                 {

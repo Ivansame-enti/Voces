@@ -5,11 +5,13 @@ using UnityEngine;
 public class PlayerInteraction : MonoBehaviour
 {
     bool hasPush;
-    public GameObject platform;
-
+    //public GameObject platform;
+    public GameObject box;
+    private Vector3 boxPos;
     // Start is called before the first frame update
     void Start()
     {
+        boxPos = box.transform.position;
         hasPush = false;
     }
 
@@ -28,19 +30,21 @@ public class PlayerInteraction : MonoBehaviour
     {
         if (other.gameObject.tag == "PushButton")
         {
-            if (Input.GetKey(KeyCode.Space) && !hasPush)
+            if (Input.GetKey(KeyCode.Space) /*&& !hasPush*/)
             {
-                platform.SetActive(false);
-                hasPush = true;
+                box.SetActive(true);
+                box.transform.position = boxPos;
+                //platform.SetActive(false);
+                //hasPush = true;
             }
         }
     }
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.gameObject.tag == "PushButton")
+        /*if (other.gameObject.tag == "PushButton")
         {
             if (hasPush) hasPush = false;
-        }
+        }*/
     }
 }

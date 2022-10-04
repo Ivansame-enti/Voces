@@ -100,13 +100,13 @@ public class PlayerPushBoxController : MonoBehaviour
                 }
             }
         }
-
+        Debug.Log(pm._speed);
         if (cubeGrabbed)
         {
             pm._speed = originalVelocity / 2;
             Vector3 vector = transform.position - hit.transform.position;
             Vector3 pullDir = vector.normalized;
-            hit.rigidbody.velocity += pullDir * (pullSpeed * Time.deltaTime);
+            if (Input.GetAxis("Horizontal") != 0 || Input.GetAxis("Vertical") != 0) hit.rigidbody.velocity += pullDir * (pullSpeed * Time.deltaTime);
             if (Input.GetKeyUp(KeyCode.Space))
             {
                 cubeGrabbed = false;
