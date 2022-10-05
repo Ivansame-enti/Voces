@@ -42,7 +42,7 @@ public class ChangeWorldController : MonoBehaviour
                 //SendGoodMessage();
             }
 
-            if (Input.GetKeyDown(KeyCode.LeftControl) && goodWorldBool)
+            if (Input.GetKeyDown(KeyCode.LeftShift) && goodWorldBool)
             {
                 timer = 0;
                 StartCoroutine(waiter2());
