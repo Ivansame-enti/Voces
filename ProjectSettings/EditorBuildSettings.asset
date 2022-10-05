@@ -6,8 +6,8 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Proyecto/Scenes/LittlePuzzle.unity
-    guid: 6567fd8431010ea42bd04d8c58d87219
+    path: Assets/Proyecto/Scenes/Puzzle.unity
+    guid: b5ce091e344692a4b886138644cb6eea
   - enabled: 1
     path: Assets/Proyecto/Scenes/Victory.unity
     guid: efc6247eae1ccdb4380b4cf95ed4e1ad
