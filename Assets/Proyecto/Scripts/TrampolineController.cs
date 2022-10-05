@@ -6,6 +6,8 @@ public class TrampolineController : MonoBehaviour
 {
     public Vector3 jumpPlayer;
     public Vector3 jumpBox;
+    private GameObject box;
+    private bool bounce = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,9 +16,13 @@ public class TrampolineController : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-
+        if (bounce)
+        {
+            box.gameObject.GetComponent<Rigidbody>().AddForce(jumpBox, ForceMode.Impulse);
+            bounce = false;
+        }
     }
     private void OnCollisionEnter(Collision collision)
     {
@@ -27,7 +33,9 @@ public class TrampolineController : MonoBehaviour
         }
         if (collision.gameObject.tag == "Box")
         {
-            collision.gameObject.GetComponent<Rigidbody>().AddForce(jumpBox, ForceMode.Impulse);
+            box = collision.gameObject;
+            bounce = true;
+            //collision.gameObject.GetComponent<Rigidbody>().AddForce(jumpBox, ForceMode.Impulse);
         }
     }
 
