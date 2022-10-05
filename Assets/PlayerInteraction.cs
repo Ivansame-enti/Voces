@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerInteraction : MonoBehaviour
 {
@@ -25,6 +26,14 @@ public class PlayerInteraction : MonoBehaviour
             }
         }
     }*/
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "End")
+        {
+            SceneManager.LoadScene("Victory");
+        }
+    }
 
     private void OnTriggerStay(Collider other)
     {
