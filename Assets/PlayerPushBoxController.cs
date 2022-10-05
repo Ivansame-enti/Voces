@@ -100,7 +100,7 @@ public class PlayerPushBoxController : MonoBehaviour
                 }
             }
         }
-        Debug.Log(pm._speed);
+        //Debug.Log(pm._speed);
         if (cubeGrabbed)
         {
             pm._speed = originalVelocity / 2;
