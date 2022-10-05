@@ -24,7 +24,6 @@ public class PortalController : MonoBehaviour
     {
         if(collision.gameObject.tag == "Box")
         {
-            Debug.Log("ASASDASF");
             if (cwd.goodWorldBool)
             {
                 collision.gameObject.transform.parent = badWorld.transform;

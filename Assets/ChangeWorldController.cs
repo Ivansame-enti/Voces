@@ -133,6 +133,18 @@ public class ChangeWorldController : MonoBehaviour
         goodWorld.SetActive(true);
         badWorld.SetActive(false);
         amc.ChangePitch("MainTheme", 1.0f);
+
+        this.transform.position = new Vector3(this.transform.position.x, this.transform.position.y + 0.2f, this.transform.position.z);
+
+        RaycastHit hit;
+
+        if (this.GetComponent<Rigidbody>().SweepTest(transform.position, out hit, 10.0f))
+        {
+            this.transform.position = new Vector3(this.transform.position.x, this.transform.position.y + 1.0f, this.transform.position.z);
+            //Debug.Log("wsdasd");
+            //aboutToCollide = true;
+            //distanceToCollision = hit.distance;
+        }
     }
 
     IEnumerator BadGlitchEffect()
@@ -157,5 +169,17 @@ public class ChangeWorldController : MonoBehaviour
         goodWorld.SetActive(false);
         badWorld.SetActive(true);
         amc.ChangePitch("MainTheme", 0.3f);
+
+        this.transform.position = new Vector3(this.transform.position.x, this.transform.position.y + 0.2f, this.transform.position.z);
+
+        RaycastHit hit;
+
+        if (this.GetComponent<Rigidbody>().SweepTest(transform.position, out hit, 10.0f))
+        {
+            this.transform.position = new Vector3(this.transform.position.x, this.transform.position.y + 1.0f, this.transform.position.z);
+            //Debug.Log("wsdasd");
+            //aboutToCollide = true;
+            //distanceToCollision = hit.distance;
+        }
     }
 }
