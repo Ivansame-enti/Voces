@@ -16,7 +16,7 @@ public class TrampolineController : MonoBehaviour
     }
 
     // Update is called once per frame
-    void FixedUpdate()
+    void Update()
     {
         if (bounce)
         {
@@ -24,6 +24,7 @@ public class TrampolineController : MonoBehaviour
             bounce = false;
         }
     }
+
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.tag == "Player")

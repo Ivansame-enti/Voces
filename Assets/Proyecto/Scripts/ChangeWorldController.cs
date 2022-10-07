@@ -17,10 +17,12 @@ public class ChangeWorldController : MonoBehaviour
     private EmergentDialogueController ed;
     public PortalController portalController;
     public bool changeWorld;
+    private NormalDialogueController ndc;
 
     // Start is called before the first frame update
     void Start()
     {
+        ndc = FindObjectOfType<NormalDialogueController>();
         ed = FindObjectOfType<EmergentDialogueController>();
         amc = FindObjectOfType<AudioManagerController>();
         goodWorldBool = true;
@@ -34,42 +36,45 @@ public class ChangeWorldController : MonoBehaviour
     {
         if (timer >= changeCD)
         {
-            if (Input.GetKeyDown(KeyCode.LeftShift) && !goodWorldBool)
+            if (!ndc.dialogPlaying)
             {
-                timer = 0;
-                StartCoroutine(waiter1());
-
-                //SendGoodMessage();
-            }
-
-            if (Input.GetKeyDown(KeyCode.LeftShift) && goodWorldBool)
-            {
-                timer = 0;
-                StartCoroutine(waiter2());
-             
-                
-                /*
-                ed.BadDialogue();
-                amc.AudioPlay("Glitch sound");
-                StartCoroutine(BadGlitchEffect());
-                timer = 0;
-                goodWorldBool = false;*/
-                //SendBadMessage();
-            }
-            if(changeWorld == true)
-            {
-                changeWorld = false;
-                if (goodWorldBool == true)
+                if (Input.GetKeyDown(KeyCode.LeftShift) && !goodWorldBool)
                 {
+                    timer = 0;
+                    StartCoroutine(waiter1());
+
+                    //SendGoodMessage();
+                }
+
+                if (Input.GetKeyDown(KeyCode.LeftShift) && goodWorldBool)
+                {
+                    timer = 0;
+                    StartCoroutine(waiter2());
+
+
+                    /*
+                    ed.BadDialogue();
+                    amc.AudioPlay("Glitch sound");
                     StartCoroutine(BadGlitchEffect());
-                    goodWorldBool = false;
+                    timer = 0;
+                    goodWorldBool = false;*/
+                    //SendBadMessage();
                 }
-                else
+                if (changeWorld == true)
                 {
-                    StartCoroutine(GoodGlitchEffect());
-                    goodWorldBool = true;
-                }
+                    changeWorld = false;
+                    if (goodWorldBool == true)
+                    {
+                        StartCoroutine(BadGlitchEffect());
+                        goodWorldBool = false;
+                    }
+                    else
+                    {
+                        StartCoroutine(GoodGlitchEffect());
+                        goodWorldBool = true;
+                    }
 
+                }
             }
         }
         else timer += Time.deltaTime;
