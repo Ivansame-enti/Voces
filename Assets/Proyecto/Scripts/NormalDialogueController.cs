@@ -13,7 +13,7 @@ public class NormalDialogueController : MonoBehaviour
     private string penguin1 = "Ven, sigueme!";
     private string penguin2 = "Vamos rapido, es por aqui";
     private bool textEnded;
-    private int textCount;
+    public int textCount;
     private AudioManagerController amc;
     private float randomDialogueSound;
 
@@ -30,10 +30,10 @@ public class NormalDialogueController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Keypad0))
+        /*if (Input.GetKeyDown(KeyCode.Keypad0))
         {
             dialogPlaying = true;
-        }
+        }*/
 
         if (dialogPlaying)
         {
@@ -50,6 +50,7 @@ public class NormalDialogueController : MonoBehaviour
             {
                 if (textCount == 2)
                 {
+                    textCount = 3;
                     dialogPlaying = false;
                     textEnded = false;
                 }

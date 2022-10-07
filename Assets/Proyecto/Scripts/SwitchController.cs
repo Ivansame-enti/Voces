@@ -24,16 +24,20 @@ public class SwitchController : MonoBehaviour
     {
         if(collision.gameObject.tag == "Player" || collision.gameObject.tag == "Box")
         {
+            //Debug.Log("Apretado");
             amc.AudioPlay("Click1");
             isPressed = true;
-            animator.Play("switch");
+            //animator.Play("switch");
         }
     }
     private void OnCollisionExit(Collision collision)
     {
-        amc.AudioPlay("Click2");
-        animator.Play("switchOff");
-        isPressed = false;
+        if (collision.gameObject.tag == "Player" || collision.gameObject.tag == "Box")
+        {
+            //Debug.Log("No Apretado");
+            amc.AudioPlay("Click2");
+            isPressed = false;
+        }
     }
 
 }
