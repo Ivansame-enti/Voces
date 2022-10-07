@@ -98250,6 +98250,7 @@ GameObject:
   - component: {fileID: 1605859071}
   - component: {fileID: 1605859070}
   - component: {fileID: 1605859069}
+  - component: {fileID: 1605859074}
   - component: {fileID: 1605859073}
   m_Layer: 0
   m_Name: Pulsador
@@ -98265,9 +98266,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1605859067}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 71.75, y: -0.07091957, z: -53.54}
-  m_LocalScale: {x: 0.7575, y: 0.013811497, z: 0.7575}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 71.6927, y: 0.23, z: -53.7484}
+  m_LocalScale: {x: 0.56275, y: 0.15, z: 0.5}
   m_Children: []
   m_Father: {fileID: 1994626555}
   m_RootOrder: 4
@@ -98283,8 +98284,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 2, z: 1.0000001}
-  m_Center: {x: 0.00000005960464, y: 0, z: -0.00000008940696}
+  m_Size: {x: 1, y: 1.0054737, z: 1.0000001}
+  m_Center: {x: 0.000000059604645, y: 0.0003286004, z: -0.0000000745058}
 --- !u!54 &1605859070
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -98349,7 +98350,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1605859067}
-  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!114 &1605859073
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -98359,11 +98360,29 @@ MonoBehaviour:
   m_GameObject: {fileID: 1605859067}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e7246d18ee391d542be70ec3ca18ae1c, type: 3}
+  m_Script: {fileID: 11500000, guid: a5ae977b8217a1a419b8ea1a81ebb15b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   isPressed: 0
-  puente: {fileID: 1156057327}
+--- !u!95 &1605859074
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1605859067}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e1a8dfac983403c4ba88ce65178e9949, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1606251832
 GameObject:
   m_ObjectHideFlags: 0

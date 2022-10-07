@@ -6,10 +6,12 @@ public class SwitchController : MonoBehaviour
 {
     public bool isPressed;
     private AudioManagerController amc;
+    private Animator animator;
     // Start is called before the first frame update
     void Start()
     {
         amc = FindObjectOfType<AudioManagerController>();
+        animator = this.GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -24,11 +26,13 @@ public class SwitchController : MonoBehaviour
         {
             amc.AudioPlay("Click1");
             isPressed = true;
+            animator.Play("switch");
         }
     }
     private void OnCollisionExit(Collision collision)
     {
         amc.AudioPlay("Click2");
+        animator.Play("switchOff");
         isPressed = false;
     }
 
