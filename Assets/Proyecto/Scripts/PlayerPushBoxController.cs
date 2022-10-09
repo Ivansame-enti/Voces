@@ -14,7 +14,7 @@ public class PlayerPushBoxController : MonoBehaviour
     Ray ray3;
     Ray ray4;
     RaycastHit hit;
-    bool cubeGrabbed=false;
+    public bool cubeGrabbed=false;
     PlayerMovement pm;
     float originalVelocity;
     public float pullSpeed;
