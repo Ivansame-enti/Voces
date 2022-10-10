@@ -146,7 +146,7 @@ public class ChangeWorldController : MonoBehaviour
         if (this.GetComponent<Rigidbody>().SweepTest(transform.position, out hit, 10.0f))
         {
             this.transform.position = new Vector3(this.transform.position.x, this.transform.position.y + 1.0f, this.transform.position.z);
-            //Debug.Log("wsdasd");
+            Debug.Log("wsdasd");
             //aboutToCollide = true;
             //distanceToCollision = hit.distance;
         }
@@ -182,7 +182,7 @@ public class ChangeWorldController : MonoBehaviour
         if (this.GetComponent<Rigidbody>().SweepTest(transform.position, out hit, 10.0f))
         {
             this.transform.position = new Vector3(this.transform.position.x, this.transform.position.y + 1.0f, this.transform.position.z);
-            //Debug.Log("wsdasd");
+            Debug.Log("wsdasd");
             //aboutToCollide = true;
             //distanceToCollision = hit.distance;
         }
