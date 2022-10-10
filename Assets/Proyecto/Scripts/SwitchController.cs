@@ -7,9 +7,13 @@ public class SwitchController : MonoBehaviour
     public bool isPressed;
     private AudioManagerController amc;
     private Animator animator;
+    private Vector3 originalScale;
+    private Vector3 pressedScale;
     // Start is called before the first frame update
     void Start()
     {
+        originalScale = this.transform.localScale;
+        pressedScale = new Vector3(originalScale.x, originalScale.y-0.05f, originalScale.z);
         amc = FindObjectOfType<AudioManagerController>();
         animator = this.GetComponent<Animator>();
     }
@@ -24,9 +28,10 @@ public class SwitchController : MonoBehaviour
     {
         if(collision.gameObject.tag == "Player" || collision.gameObject.tag == "Box")
         {
-            //Debug.Log("Apretado");
-            amc.AudioPlay("Click1");
+            Debug.Log("Apretado");
+            if(!amc.GetAudioPlaying("Click1") && !amc.GetAudioPlaying("Click2")) amc.AudioPlay("Click1");
             isPressed = true;
+            this.transform.localScale = pressedScale;
             //animator.Play("switch");
         }
     }
@@ -34,9 +39,10 @@ public class SwitchController : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player" || collision.gameObject.tag == "Box")
         {
-            //Debug.Log("No Apretado");
-            amc.AudioPlay("Click2");
+            Debug.Log("No Apretado");
+            if (!amc.GetAudioPlaying("Click2") && !amc.GetAudioPlaying("Click1")) amc.AudioPlay("Click2");
             isPressed = false;
+            this.transform.localScale = originalScale;
         }
     }
 
