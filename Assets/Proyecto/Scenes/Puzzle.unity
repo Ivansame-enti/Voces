@@ -25,8 +25,8 @@ RenderSettings:
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 1
   m_AmbientMode: 0
-  m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SubtractiveShadowColor: {r: 0, g: 0, b: 0, a: 1}
+  m_SkyboxMaterial: {fileID: 2100000, guid: ed66dffcec9c9c84ab9625b9e086048f, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -37,8 +37,8 @@ RenderSettings:
   m_ReflectionBounces: 1
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
-  m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_Sun: {fileID: 1814605495}
+  m_IndirectSpecularColor: {r: 0.44978732, g: 0.49985182, b: 0.57561064, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_LightingSettings: {fileID: 0}
+  m_LightingSettings: {fileID: 4890085278179872738, guid: 44e86d38ee7923140bfac90d899d825f, type: 2}
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -548,9 +548,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 101615967}
     m_Modifications:
+    - target: {fileID: 6828276493466858708, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276493738074934, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309240, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_Name
       value: Grass
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276494726309240, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309241, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_RootOrder
@@ -594,6 +606,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309241, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276495305782449, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276495442360282, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -3779,6 +3799,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stone
       objectReference: {fileID: 0}
+    - target: {fileID: 8277035044403815714, guid: 008392711e9c7bf4ebef69aad5b534ab, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 008392711e9c7bf4ebef69aad5b534ab, type: 3}
 --- !u!1 &62979400
@@ -5290,9 +5314,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 723023905}
     m_Modifications:
+    - target: {fileID: 6828276493466858708, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276493738074934, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309240, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_Name
       value: Grass
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276494726309240, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309241, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_RootOrder
@@ -5338,6 +5374,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6828276495305782449, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276495442360282, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
 --- !u!4 &89873506 stripped
@@ -5352,9 +5396,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 101615967}
     m_Modifications:
+    - target: {fileID: 6828276493466858708, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276493738074934, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309240, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_Name
       value: Grass
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276494726309240, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309241, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_RootOrder
@@ -5398,6 +5454,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309241, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276495305782449, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276495442360282, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -8648,9 +8712,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 101615967}
     m_Modifications:
+    - target: {fileID: 6828276493466858708, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276493738074934, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309240, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_Name
       value: Grass
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276494726309240, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309241, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_RootOrder
@@ -8694,6 +8770,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309241, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276495305782449, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276495442360282, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -9662,9 +9746,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 723023905}
     m_Modifications:
+    - target: {fileID: 6828276493466858708, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276493738074934, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309240, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_Name
       value: Grass
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276494726309240, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309241, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_RootOrder
@@ -9708,6 +9804,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309241, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276495305782449, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276495442360282, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -11069,9 +11173,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 723023905}
     m_Modifications:
+    - target: {fileID: 6828276493466858708, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276493738074934, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309240, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_Name
       value: Grass
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276494726309240, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309241, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_RootOrder
@@ -11115,6 +11231,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309241, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276495305782449, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276495442360282, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -16406,9 +16530,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 101615967}
     m_Modifications:
+    - target: {fileID: 6828276493466858708, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276493738074934, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309240, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_Name
       value: Grass
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276494726309240, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309241, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_RootOrder
@@ -16452,6 +16588,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309241, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276495305782449, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276495442360282, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -17164,9 +17308,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 723023905}
     m_Modifications:
+    - target: {fileID: 6828276493466858708, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276493738074934, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309240, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_Name
       value: Grass
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276494726309240, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309241, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_RootOrder
@@ -17210,6 +17366,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309241, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276495305782449, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276495442360282, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -17873,6 +18037,10 @@ PrefabInstance:
     - target: {fileID: 8277035044403815714, guid: 008392711e9c7bf4ebef69aad5b534ab, type: 3}
       propertyPath: m_Name
       value: Stone
+      objectReference: {fileID: 0}
+    - target: {fileID: 8277035044403815714, guid: 008392711e9c7bf4ebef69aad5b534ab, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 008392711e9c7bf4ebef69aad5b534ab, type: 3}
@@ -18572,6 +18740,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stone
       objectReference: {fileID: 0}
+    - target: {fileID: 8277035044403815714, guid: 008392711e9c7bf4ebef69aad5b534ab, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 008392711e9c7bf4ebef69aad5b534ab, type: 3}
 --- !u!4 &319981630 stripped
@@ -18762,7 +18934,7 @@ Transform:
   m_Children:
   - {fileID: 1101231516}
   m_Father: {fileID: 1994626555}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!156049354 &325298618
 Grid:
@@ -22690,6 +22862,10 @@ MonoBehaviour:
   blendDistance: 0
   weight: 1
   priority: 0
+  m_PreviousLayer: 0
+  m_PreviousPriority: 0
+  m_TempColliders: []
+  m_InternalProfile: {fileID: 0}
 --- !u!1 &393861804
 GameObject:
   m_ObjectHideFlags: 0
@@ -24450,9 +24626,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 101615967}
     m_Modifications:
+    - target: {fileID: 6828276493466858708, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276493738074934, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309240, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_Name
       value: Grass
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276494726309240, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309241, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_RootOrder
@@ -24496,6 +24684,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309241, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276495305782449, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276495442360282, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -24722,9 +24918,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 723023905}
     m_Modifications:
+    - target: {fileID: 6828276493466858708, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276493738074934, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309240, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_Name
       value: Grass
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276494726309240, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309241, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_RootOrder
@@ -24768,6 +24976,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309241, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276495305782449, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276495442360282, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -27162,9 +27378,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 101615967}
     m_Modifications:
+    - target: {fileID: 6828276493466858708, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276493738074934, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309240, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_Name
       value: Grass
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276494726309240, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309241, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_RootOrder
@@ -27208,6 +27436,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309241, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276495305782449, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276495442360282, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -28966,9 +29202,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 101615967}
     m_Modifications:
+    - target: {fileID: 6828276493466858708, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276493738074934, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309240, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_Name
       value: Grass
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276494726309240, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309241, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_RootOrder
@@ -29012,6 +29260,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309241, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276495305782449, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276495442360282, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -29953,7 +30209,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1507636620937791777, guid: 7097ba7ba649e1f41bba232312bdcbd8, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1507636620937791777, guid: 7097ba7ba649e1f41bba232312bdcbd8, type: 3}
       propertyPath: m_LocalPosition.x
@@ -33678,9 +33934,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 101615967}
     m_Modifications:
+    - target: {fileID: 6828276493466858708, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276493738074934, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309240, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_Name
       value: Grass
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276494726309240, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309241, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_RootOrder
@@ -33724,6 +33992,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309241, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276495305782449, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276495442360282, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -36072,9 +36348,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 723023905}
     m_Modifications:
+    - target: {fileID: 6828276493466858708, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276493738074934, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309240, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_Name
       value: Grass
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276494726309240, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309241, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_RootOrder
@@ -36118,6 +36406,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309241, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276495305782449, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276495442360282, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -36850,9 +37146,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 101615967}
     m_Modifications:
+    - target: {fileID: 6828276493466858708, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276493738074934, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309240, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_Name
       value: Grass
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276494726309240, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309241, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_RootOrder
@@ -36896,6 +37204,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309241, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276495305782449, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276495442360282, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -39436,9 +39752,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 101615967}
     m_Modifications:
+    - target: {fileID: 6828276493466858708, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276493738074934, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309240, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_Name
       value: Grass
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276494726309240, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309241, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_RootOrder
@@ -39482,6 +39810,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309241, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276495305782449, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276495442360282, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -39809,9 +40145,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 101615967}
     m_Modifications:
+    - target: {fileID: 6828276493466858708, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276493738074934, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309240, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_Name
       value: Grass
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276494726309240, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309241, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_RootOrder
@@ -39855,6 +40203,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309241, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276495305782449, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276495442360282, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -40167,9 +40523,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 101615967}
     m_Modifications:
+    - target: {fileID: 6828276493466858708, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276493738074934, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309240, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_Name
       value: Grass
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276494726309240, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309241, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_RootOrder
@@ -40213,6 +40581,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309241, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276495305782449, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276495442360282, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -40877,9 +41253,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 101615967}
     m_Modifications:
+    - target: {fileID: 6828276493466858708, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276493738074934, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309240, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_Name
       value: Grass
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276494726309240, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309241, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_RootOrder
@@ -40923,6 +41311,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309241, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276495305782449, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276495442360282, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -44157,9 +44553,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 101615967}
     m_Modifications:
+    - target: {fileID: 6828276493466858708, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276493738074934, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309240, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_Name
       value: Grass
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276494726309240, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309241, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_RootOrder
@@ -44203,6 +44611,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309241, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276495305782449, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276495442360282, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -47470,6 +47886,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stone
       objectReference: {fileID: 0}
+    - target: {fileID: 8277035044403815714, guid: 008392711e9c7bf4ebef69aad5b534ab, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 008392711e9c7bf4ebef69aad5b534ab, type: 3}
 --- !u!1001 &814095732
@@ -50701,9 +51121,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 101615967}
     m_Modifications:
+    - target: {fileID: 6828276493466858708, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276493738074934, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309240, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_Name
       value: Grass
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276494726309240, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309241, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_RootOrder
@@ -50747,6 +51179,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309241, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276495305782449, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276495442360282, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -52354,9 +52794,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 101615967}
     m_Modifications:
+    - target: {fileID: 6828276493466858708, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276493738074934, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309240, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_Name
       value: Grass
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276494726309240, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309241, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_RootOrder
@@ -52400,6 +52852,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309241, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276495305782449, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276495442360282, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -54727,6 +55187,10 @@ MonoBehaviour:
   blendDistance: 0
   weight: 1
   priority: 0
+  m_PreviousLayer: 0
+  m_PreviousPriority: 0
+  m_TempColliders: []
+  m_InternalProfile: {fileID: 0}
 --- !u!1001 &908411380
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -55046,9 +55510,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 101615967}
     m_Modifications:
+    - target: {fileID: 6828276493466858708, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276493738074934, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309240, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_Name
       value: Grass
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276494726309240, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309241, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_RootOrder
@@ -55092,6 +55568,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309241, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276495305782449, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276495442360282, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -55897,9 +56381,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 101615967}
     m_Modifications:
+    - target: {fileID: 6828276493466858708, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276493738074934, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309240, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_Name
       value: Grass
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276494726309240, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309241, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_RootOrder
@@ -55943,6 +56439,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309241, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276495305782449, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276495442360282, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -56603,9 +57107,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 101615967}
     m_Modifications:
+    - target: {fileID: 6828276493466858708, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276493738074934, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309240, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_Name
       value: Grass
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276494726309240, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309241, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_RootOrder
@@ -56649,6 +57165,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309241, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276495305782449, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276495442360282, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -57225,9 +57749,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 101615967}
     m_Modifications:
+    - target: {fileID: 6828276493466858708, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276493738074934, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309240, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_Name
       value: Grass
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276494726309240, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309241, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_RootOrder
@@ -57271,6 +57807,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309241, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276495305782449, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276495442360282, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -57995,6 +58539,7 @@ GameObject:
   - component: {fileID: 961882605}
   - component: {fileID: 961882612}
   - component: {fileID: 961882613}
+  - component: {fileID: 961882614}
   m_Layer: 0
   m_Name: Main Camera (1)
   m_TagString: MainCamera
@@ -58016,7 +58561,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   volumeTrigger: {fileID: 961882611}
   volumeLayer:
-    serializedVersion: 2
     m_Bits: 8
   stopNaNPropagation: 1
   finalBlitToCameraTarget: 0
@@ -58026,6 +58570,9 @@ MonoBehaviour:
     sharpness: 0.25
     stationaryBlending: 0.95
     motionBlending: 0.85
+    <jitter>k__BackingField: {x: 0, y: 0}
+    m_ResetHistory: 1
+    <sampleIndex>k__BackingField: 0
   subpixelMorphologicalAntialiasing:
     quality: 2
   fastApproximateAntialiasing:
@@ -58034,21 +58581,18 @@ MonoBehaviour:
   fog:
     enabled: 1
     excludeSkybox: 1
+  dithering:
+    m_NoiseTextureIndex: 0
   debugLayer:
-    lightMeter:
-      width: 512
-      height: 256
-      showCurves: 1
-    histogram:
-      width: 512
-      height: 256
-      channel: 3
-    waveform:
-      exposure: 0.12
-      height: 256
-    vectorscope:
-      size: 256
-      exposure: 0.12
+    lightMeter: {<output>k__BackingField: {fileID: 0}, requested: 0, width: 512, height: 256, showCurves: 1}
+    histogram: {<output>k__BackingField: {fileID: 0}, requested: 0, width: 512, height: 256, channel: 3}
+    waveform: {<output>k__BackingField: {fileID: 0}, requested: 0, exposure: 0.12, height: 256}
+    vectorscope: {<output>k__BackingField: {fileID: 0}, requested: 0, size: 256, exposure: 0.12}
+    frameWidth: 0
+    frameHeight: 0
+    <debugOverlayTarget>k__BackingField: {fileID: 0}
+    <debugOverlayActive>k__BackingField: 0
+    <debugOverlay>k__BackingField: 0
     overlaySettings:
       linearDepth: 0
       motionColorIntensity: 4
@@ -58062,6 +58606,12 @@ MonoBehaviour:
   m_BeforeTransparentBundles: []
   m_BeforeStackBundles: []
   m_AfterStackBundles: []
+  <cameraDepthFlags>k__BackingField: 0
+  <haveBundlesBeenInited>k__BackingField: 0
+  m_Camera: {fileID: 0}
+  m_SettingsUpdateNeeded: 1
+  m_IsRenderingInSceneView: 0
+  m_NaNKilled: 0
 --- !u!114 &961882606
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -58236,6 +58786,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9252d638ad36b6b4492bd3b6fb282670, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &961882614
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 961882604}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 172515602e62fb746b5d573b38a5fe58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isGlobal: 1
+  priority: 0
+  blendDistance: 0
+  weight: 1
+  sharedProfile: {fileID: 11400000, guid: fa8063a0d02429b4b9154be5c63dcd83, type: 2}
 --- !u!1 &963611747
 GameObject:
   m_ObjectHideFlags: 0
@@ -60437,9 +61004,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 723023905}
     m_Modifications:
+    - target: {fileID: 6828276493466858708, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276493738074934, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309240, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_Name
       value: Grass
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276494726309240, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309241, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_RootOrder
@@ -60483,6 +61062,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309241, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276495305782449, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276495442360282, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -61795,9 +62382,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 723023905}
     m_Modifications:
+    - target: {fileID: 6828276493466858708, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276493738074934, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309240, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_Name
       value: Grass
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276494726309240, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309241, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_RootOrder
@@ -61841,6 +62440,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309241, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276495305782449, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276495442360282, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -62809,9 +63416,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 101615967}
     m_Modifications:
+    - target: {fileID: 6828276493466858708, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276493738074934, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309240, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_Name
       value: Grass
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276494726309240, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309241, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_RootOrder
@@ -62855,6 +63474,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309241, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276495305782449, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276495442360282, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -67365,6 +67992,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stone
       objectReference: {fileID: 0}
+    - target: {fileID: 8277035044403815714, guid: 008392711e9c7bf4ebef69aad5b534ab, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 008392711e9c7bf4ebef69aad5b534ab, type: 3}
 --- !u!1001 &1130131560
@@ -67607,7 +68238,7 @@ Transform:
   m_Children:
   - {fileID: 2028963085}
   m_Father: {fileID: 1994626555}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!156049354 &1132137848
 Grid:
@@ -68277,9 +68908,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 101615967}
     m_Modifications:
+    - target: {fileID: 6828276493466858708, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276493738074934, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309240, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_Name
       value: Grass
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276494726309240, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309241, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_RootOrder
@@ -68323,6 +68966,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309241, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276495305782449, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276495442360282, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -68842,9 +69493,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 723023905}
     m_Modifications:
+    - target: {fileID: 6828276493466858708, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276493738074934, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309240, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_Name
       value: Grass
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276494726309240, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309241, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_RootOrder
@@ -68888,6 +69551,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309241, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276495305782449, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276495442360282, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -70067,9 +70738,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 723023905}
     m_Modifications:
+    - target: {fileID: 6828276493466858708, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276493738074934, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309240, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_Name
       value: Grass
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276494726309240, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309241, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_RootOrder
@@ -70113,6 +70796,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309241, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276495305782449, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276495442360282, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -70536,9 +71227,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 723023905}
     m_Modifications:
+    - target: {fileID: 6828276493466858708, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276493738074934, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309240, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_Name
       value: Grass
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276494726309240, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309241, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_RootOrder
@@ -70582,6 +71285,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309241, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276495305782449, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276495442360282, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -71938,9 +72649,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 101615967}
     m_Modifications:
+    - target: {fileID: 6828276493466858708, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276493738074934, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309240, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_Name
       value: Grass
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276494726309240, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309241, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_RootOrder
@@ -71986,6 +72709,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6828276495305782449, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276495442360282, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
 --- !u!1001 &1180803522
@@ -71995,9 +72726,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 101615967}
     m_Modifications:
+    - target: {fileID: 6828276493466858708, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276493738074934, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309240, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_Name
       value: Grass
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276494726309240, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309241, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_RootOrder
@@ -72041,6 +72784,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309241, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276495305782449, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276495442360282, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -73360,9 +74111,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 101615967}
     m_Modifications:
+    - target: {fileID: 6828276493466858708, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276493738074934, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309240, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_Name
       value: Grass
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276494726309240, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309241, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_RootOrder
@@ -73406,6 +74169,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309241, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276495305782449, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276495442360282, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -74423,9 +75194,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 101615967}
     m_Modifications:
+    - target: {fileID: 6828276493466858708, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276493738074934, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309240, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_Name
       value: Grass
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276494726309240, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309241, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_RootOrder
@@ -74469,6 +75252,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309241, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276495305782449, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276495442360282, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -75218,9 +76009,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 101615967}
     m_Modifications:
+    - target: {fileID: 6828276493466858708, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276493738074934, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309240, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_Name
       value: Grass
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276494726309240, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309241, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_RootOrder
@@ -75264,6 +76067,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309241, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276495305782449, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276495442360282, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -77430,9 +78241,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 101615967}
     m_Modifications:
+    - target: {fileID: 6828276493466858708, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276493738074934, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309240, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_Name
       value: Grass
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276494726309240, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309241, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_RootOrder
@@ -77476,6 +78299,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309241, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276495305782449, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276495442360282, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -78213,6 +79044,10 @@ PrefabInstance:
     - target: {fileID: 8277035044403815714, guid: 008392711e9c7bf4ebef69aad5b534ab, type: 3}
       propertyPath: m_Name
       value: Stone
+      objectReference: {fileID: 0}
+    - target: {fileID: 8277035044403815714, guid: 008392711e9c7bf4ebef69aad5b534ab, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 008392711e9c7bf4ebef69aad5b534ab, type: 3}
@@ -79113,6 +79948,10 @@ PrefabInstance:
     - target: {fileID: 8277035044403815714, guid: 008392711e9c7bf4ebef69aad5b534ab, type: 3}
       propertyPath: m_Name
       value: Stone
+      objectReference: {fileID: 0}
+    - target: {fileID: 8277035044403815714, guid: 008392711e9c7bf4ebef69aad5b534ab, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 008392711e9c7bf4ebef69aad5b534ab, type: 3}
@@ -81250,9 +82089,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 101615967}
     m_Modifications:
+    - target: {fileID: 6828276493466858708, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276493738074934, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309240, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_Name
       value: Grass
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276494726309240, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309241, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_RootOrder
@@ -81296,6 +82147,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309241, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276495305782449, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276495442360282, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -81857,9 +82716,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 101615967}
     m_Modifications:
+    - target: {fileID: 6828276493466858708, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276493738074934, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309240, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_Name
       value: Grass
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276494726309240, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309241, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_RootOrder
@@ -81903,6 +82774,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309241, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276495305782449, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276495442360282, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -84143,6 +85022,54 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5a9e54be7215d6b459f0d8956dedd926, type: 3}
+--- !u!1 &1384781290
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1384781292}
+  - component: {fileID: 1384781291}
+  m_Layer: 0
+  m_Name: Global Volume
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1384781291
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1384781290}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 172515602e62fb746b5d573b38a5fe58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isGlobal: 1
+  priority: 0
+  blendDistance: 0
+  weight: 1
+  sharedProfile: {fileID: 11400000, guid: fa8063a0d02429b4b9154be5c63dcd83, type: 2}
+--- !u!4 &1384781292
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1384781290}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 72.09341, y: -88.17579, z: 66.24111}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 22
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1385405057 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4442910645814578908, guid: 5a9e54be7215d6b459f0d8956dedd926, type: 3}
@@ -84441,54 +85368,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6828276494726309241, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
   m_PrefabInstance: {fileID: 1860738176}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1388845459
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1388845460}
-  - component: {fileID: 1388845461}
-  m_Layer: 3
-  m_Name: Volume
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1388845460
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1388845459}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1592878328}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1388845461
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1388845459}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8b9a305e18de0c04dbd257a21cd47087, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sharedProfile: {fileID: 11400000, guid: 38ed04e93a932174288f54d588ae928d, type: 2}
-  isGlobal: 1
-  blendDistance: 0
-  weight: 1
-  priority: 0
 --- !u!1 &1389288053
 GameObject:
   m_ObjectHideFlags: 0
@@ -86287,6 +87166,70 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1409457339}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1410443391
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1410443393}
+  - component: {fileID: 1410443392}
+  m_Layer: 0
+  m_Name: Reflection Probe
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!215 &1410443392
+ReflectionProbe:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1410443391}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Type: 0
+  m_Mode: 0
+  m_RefreshMode: 0
+  m_TimeSlicingMode: 0
+  m_Resolution: 128
+  m_UpdateFrequency: 0
+  m_BoxSize: {x: 91.08, y: 10, z: 121.13}
+  m_BoxOffset: {x: 0, y: 0, z: 0}
+  m_NearClip: 0.3
+  m_FarClip: 1000
+  m_ShadowDistance: 100
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IntensityMultiplier: 1
+  m_BlendDistance: 1
+  m_HDR: 1
+  m_BoxProjection: 0
+  m_RenderDynamicObjects: 0
+  m_UseOcclusionCulling: 1
+  m_Importance: 1
+  m_CustomBakedTexture: {fileID: 0}
+--- !u!4 &1410443393
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1410443391}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 79.53224, y: -2.4, z: -52.2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 23
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1411229387
 GameObject:
   m_ObjectHideFlags: 0
@@ -86551,9 +87494,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 101615967}
     m_Modifications:
+    - target: {fileID: 6828276493466858708, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276493738074934, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309240, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_Name
       value: Grass
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276494726309240, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309241, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_RootOrder
@@ -86597,6 +87552,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309241, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276495305782449, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276495442360282, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -87203,9 +88166,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 723023905}
     m_Modifications:
+    - target: {fileID: 6828276493466858708, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276493738074934, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309240, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_Name
       value: Grass
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276494726309240, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309241, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_RootOrder
@@ -87249,6 +88224,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309241, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276495305782449, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276495442360282, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -88124,9 +89107,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 101615967}
     m_Modifications:
+    - target: {fileID: 6828276493466858708, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276493738074934, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309240, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_Name
       value: Grass
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276494726309240, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309241, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_RootOrder
@@ -88170,6 +89165,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309241, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276495305782449, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276495442360282, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -88944,9 +89947,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 101615967}
     m_Modifications:
+    - target: {fileID: 6828276493466858708, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276493738074934, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309240, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_Name
       value: Grass
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276494726309240, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309241, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_RootOrder
@@ -88990,6 +90005,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309241, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276495305782449, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276495442360282, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -91848,9 +92871,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 101615967}
     m_Modifications:
+    - target: {fileID: 6828276493466858708, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276493738074934, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309240, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_Name
       value: Grass
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276494726309240, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309241, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_RootOrder
@@ -91894,6 +92929,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309241, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276495305782449, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276495442360282, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -94705,9 +95748,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 101615967}
     m_Modifications:
+    - target: {fileID: 6828276493466858708, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276493738074934, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309240, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_Name
       value: Grass
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276494726309240, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309241, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_RootOrder
@@ -94751,6 +95806,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309241, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276495305782449, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276495442360282, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -95315,9 +96378,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 101615967}
     m_Modifications:
+    - target: {fileID: 6828276493466858708, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276493738074934, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309240, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_Name
       value: Grass
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276494726309240, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309241, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_RootOrder
@@ -95361,6 +96436,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309241, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276495305782449, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276495442360282, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -97044,9 +98127,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 101615967}
     m_Modifications:
+    - target: {fileID: 6828276493466858708, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276493738074934, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309240, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_Name
       value: Grass
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276494726309240, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309241, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_RootOrder
@@ -97090,6 +98185,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309241, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276495305782449, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276495442360282, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -97270,37 +98373,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5a9e54be7215d6b459f0d8956dedd926, type: 3}
---- !u!1 &1592878327
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1592878328}
-  m_Layer: 0
-  m_Name: PostProcessing
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1592878328
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1592878327}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.6633213, y: -2.0368133, z: -19.809916}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1388845460}
-  m_Father: {fileID: 1994626555}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1593089088
 GameObject:
   m_ObjectHideFlags: 0
@@ -97513,6 +98585,10 @@ PrefabInstance:
     - target: {fileID: 8277035044403815714, guid: 008392711e9c7bf4ebef69aad5b534ab, type: 3}
       propertyPath: m_Name
       value: Stone
+      objectReference: {fileID: 0}
+    - target: {fileID: 8277035044403815714, guid: 008392711e9c7bf4ebef69aad5b534ab, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 008392711e9c7bf4ebef69aad5b534ab, type: 3}
@@ -99269,9 +100345,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 101615967}
     m_Modifications:
+    - target: {fileID: 6828276493466858708, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276493738074934, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309240, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_Name
       value: Grass
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276494726309240, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309241, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_RootOrder
@@ -99315,6 +100403,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309241, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276495305782449, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276495442360282, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -99935,9 +101031,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 723023905}
     m_Modifications:
+    - target: {fileID: 6828276493466858708, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276493738074934, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309240, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_Name
       value: Grass
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276494726309240, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309241, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_RootOrder
@@ -99981,6 +101089,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309241, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276495305782449, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276495442360282, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -100093,9 +101209,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 101615967}
     m_Modifications:
+    - target: {fileID: 6828276493466858708, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276493738074934, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309240, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_Name
       value: Grass
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276494726309240, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309241, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_RootOrder
@@ -100139,6 +101267,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309241, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276495305782449, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276495442360282, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -106155,9 +107291,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 101615967}
     m_Modifications:
+    - target: {fileID: 6828276493466858708, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276493738074934, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309240, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_Name
       value: Grass
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276494726309240, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309241, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_RootOrder
@@ -106201,6 +107349,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309241, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276495305782449, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276495442360282, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -107115,9 +108271,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 101615967}
     m_Modifications:
+    - target: {fileID: 6828276493466858708, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276493738074934, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309240, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_Name
       value: Grass
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276494726309240, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309241, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_RootOrder
@@ -107161,6 +108329,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309241, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276495305782449, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276495442360282, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -107525,9 +108701,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 101615967}
     m_Modifications:
+    - target: {fileID: 6828276493466858708, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276493738074934, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309240, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_Name
       value: Grass
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276494726309240, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309241, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_RootOrder
@@ -107571,6 +108759,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309241, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276495305782449, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276495442360282, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -107945,9 +109141,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 723023905}
     m_Modifications:
+    - target: {fileID: 6828276493466858708, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276493738074934, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309240, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_Name
       value: Grass
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276494726309240, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309241, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_RootOrder
@@ -107991,6 +109199,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309241, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276495305782449, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276495442360282, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -109587,8 +110803,8 @@ Light:
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
-  m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
-  m_Intensity: 1
+  m_Color: {r: 0.9607843, g: 0.6764788, b: 0.21960783, a: 1}
+  m_Intensity: 1.5
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -109645,13 +110861,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1814605494}
-  m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
-  m_LocalPosition: {x: 0, y: 3, z: 0}
+  m_LocalRotation: {x: 0.31785992, y: -0.22234412, z: 0.13247785, w: 0.91212815}
+  m_LocalPosition: {x: 78.54, y: 9.24, z: -63.15}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 39.7, y: -24.691, z: 7.492}
 --- !u!4 &1815678110 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4442910645814578908, guid: 5a9e54be7215d6b459f0d8956dedd926, type: 3}
@@ -112014,9 +113230,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 101615967}
     m_Modifications:
+    - target: {fileID: 6828276493466858708, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276493738074934, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309240, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_Name
       value: Grass
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276494726309240, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309241, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_RootOrder
@@ -112060,6 +113288,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309241, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276495305782449, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276495442360282, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -112182,9 +113418,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 101615967}
     m_Modifications:
+    - target: {fileID: 6828276493466858708, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276493738074934, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309240, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_Name
       value: Grass
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276494726309240, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309241, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_RootOrder
@@ -112228,6 +113476,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309241, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276495305782449, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276495442360282, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -113266,6 +114522,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stone
       objectReference: {fileID: 0}
+    - target: {fileID: 8277035044403815714, guid: 008392711e9c7bf4ebef69aad5b534ab, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 008392711e9c7bf4ebef69aad5b534ab, type: 3}
 --- !u!1 &1887719921
@@ -114045,9 +115305,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 723023905}
     m_Modifications:
+    - target: {fileID: 6828276493466858708, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276493738074934, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309240, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_Name
       value: Grass
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276494726309240, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309241, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_RootOrder
@@ -114091,6 +115363,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309241, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276495305782449, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276495442360282, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -115321,9 +116601,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 101615967}
     m_Modifications:
+    - target: {fileID: 6828276493466858708, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276493738074934, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309240, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_Name
       value: Grass
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276494726309240, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309241, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_RootOrder
@@ -115367,6 +116659,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309241, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276495305782449, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276495442360282, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -115749,9 +117049,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 101615967}
     m_Modifications:
+    - target: {fileID: 6828276493466858708, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276493738074934, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309240, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_Name
       value: Grass
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276494726309240, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309241, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_RootOrder
@@ -115797,6 +117109,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6828276495305782449, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276495442360282, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
 --- !u!4 &1930701401 stripped
@@ -115811,9 +117131,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 101615967}
     m_Modifications:
+    - target: {fileID: 6828276493466858708, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276493738074934, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309240, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_Name
       value: Grass
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276494726309240, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309241, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_RootOrder
@@ -115859,6 +117191,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6828276495305782449, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276495442360282, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
 --- !u!4 &1931413165 stripped
@@ -115873,9 +117213,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 101615967}
     m_Modifications:
+    - target: {fileID: 6828276493466858708, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276493738074934, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309240, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_Name
       value: Grass
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276494726309240, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309241, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_RootOrder
@@ -115919,6 +117271,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309241, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276495305782449, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276495442360282, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -116347,9 +117707,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 101615967}
     m_Modifications:
+    - target: {fileID: 6828276493466858708, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276493738074934, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309240, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_Name
       value: Grass
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276494726309240, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309241, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_RootOrder
@@ -116393,6 +117765,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309241, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276495305782449, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276495442360282, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -116535,7 +117915,7 @@ Transform:
   m_LocalScale: {x: 0.7575, y: 0.013811497, z: 0.7575}
   m_Children: []
   m_Father: {fileID: 1994626555}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1940677545
 MonoBehaviour:
@@ -119914,6 +121294,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stone
       objectReference: {fileID: 0}
+    - target: {fileID: 8277035044403815714, guid: 008392711e9c7bf4ebef69aad5b534ab, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 008392711e9c7bf4ebef69aad5b534ab, type: 3}
 --- !u!1001 &1990136132
@@ -119923,9 +121307,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 101615967}
     m_Modifications:
+    - target: {fileID: 6828276493466858708, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276493738074934, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309240, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_Name
       value: Grass
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276494726309240, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309241, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_RootOrder
@@ -119969,6 +121365,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309241, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276495305782449, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276495442360282, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -120358,7 +121762,6 @@ Transform:
   - {fileID: 864872823}
   - {fileID: 879111611}
   - {fileID: 1605859068}
-  - {fileID: 1592878328}
   - {fileID: 325298617}
   - {fileID: 1132137847}
   - {fileID: 1940677544}
@@ -123796,9 +125199,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 101615967}
     m_Modifications:
+    - target: {fileID: 6828276493466858708, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276493738074934, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309240, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_Name
       value: Grass
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276494726309240, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309241, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_RootOrder
@@ -123842,6 +125257,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309241, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276495305782449, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276495442360282, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -125249,9 +126672,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 101615967}
     m_Modifications:
+    - target: {fileID: 6828276493466858708, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276493738074934, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309240, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_Name
       value: Grass
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276494726309240, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309241, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_RootOrder
@@ -125295,6 +126730,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309241, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276495305782449, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276495442360282, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -126843,9 +128286,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 101615967}
     m_Modifications:
+    - target: {fileID: 6828276493466858708, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276493738074934, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309240, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_Name
       value: Grass
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276494726309240, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309241, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_RootOrder
@@ -126889,6 +128344,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6828276494726309241, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276495305782449, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828276495442360282, guid: 0ec77947b48e68441b46c068eea01455, type: 3}
+      propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
