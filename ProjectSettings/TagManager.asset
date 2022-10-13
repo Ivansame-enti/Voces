@@ -8,6 +8,8 @@ TagManager:
   - Box
   - EmergentDialogue
   - End
+  - Dialogue
+  - Obstacle
   layers:
   - Default
   - TransparentFX
