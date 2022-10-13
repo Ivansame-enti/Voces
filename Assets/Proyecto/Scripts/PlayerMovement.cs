@@ -8,8 +8,11 @@ public class PlayerMovement : MonoBehaviour
     public Animator animator;
     private AudioManagerController amc;
     private NormalDialogueController ndc;
+    private PlayerPushBoxController ppc;
+    private Vector3 vel = new Vector3(0, 0, 0);
     private void Start()
     {
+        ppc = this.GetComponent<PlayerPushBoxController>();
         ndc = FindObjectOfType<NormalDialogueController>();
         amc = FindObjectOfType<AudioManagerController>();
     }
@@ -20,8 +23,11 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         if (!ndc.dialogPlaying)
-        {
-            var vel = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical")) * _speed;
+        {           
+            if(!ppc.cubeGrabbedRight && !ppc.cubeGrabbedLeft && !ppc.cubeGrabbedUp && !ppc.cubeGrabbedDown) vel = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical")) * _speed;
+            else if ((ppc.cubeGrabbedRight || ppc.cubeGrabbedLeft) && Input.GetAxis("Horizontal") != 0) vel = new Vector3(Input.GetAxis("Horizontal"), 0, 0) * _speed;
+            else if ((ppc.cubeGrabbedDown  || ppc.cubeGrabbedUp) && Input.GetAxis("Vertical") != 0) vel = new Vector3(0, 0, Input.GetAxis("Vertical")) * _speed;
+
             vel.y = _rb.velocity.y;
             _rb.velocity = vel;
 
