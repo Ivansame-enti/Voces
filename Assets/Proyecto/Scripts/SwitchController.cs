@@ -9,11 +9,12 @@ public class SwitchController : MonoBehaviour
     private Animator animator;
     private Vector3 originalScale;
     private Vector3 pressedScale;
+    public GameObject specialParticles;
     // Start is called before the first frame update
     void Start()
     {
         originalScale = this.transform.localScale;
-        pressedScale = new Vector3(originalScale.x, originalScale.y-0.05f, originalScale.z);
+        pressedScale = new Vector3(originalScale.x, originalScale.y-0.15f, originalScale.z);
         amc = FindObjectOfType<AudioManagerController>();
         animator = this.GetComponent<Animator>();
     }
@@ -33,6 +34,7 @@ public class SwitchController : MonoBehaviour
             isPressed = true;
             this.transform.localScale = pressedScale;
             //animator.Play("switch");
+            Instantiate(specialParticles, this.transform.position, Quaternion.identity);
         }
     }
     private void OnCollisionExit(Collision collision)

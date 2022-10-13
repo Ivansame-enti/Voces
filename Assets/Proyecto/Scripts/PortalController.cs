@@ -12,6 +12,7 @@ public class PortalController : MonoBehaviour
     private PlayerPushBoxController ppbc;
     private PlayerMovement pm;
     private float normalSpeed;
+
     // Start is called before the first frame update
     void Start()
     {
