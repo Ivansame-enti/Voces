@@ -62,6 +62,9 @@ public class ExtraEmergentDialogue : MonoBehaviour
     {
         if (timer <= 0 && neutralDialogActivated)
         {
+            //random = Random.Range(-10, 11);
+            //textBox.gameObject.transform.Rotate(0, 0, random);
+
             random = Random.Range(0, 3);
             if (random == 0) NarrativeDialogue();
             else if (random == 1) GoodDialogue();
@@ -76,7 +79,11 @@ public class ExtraEmergentDialogue : MonoBehaviour
 
     public void GoodDialogue()
     {
-        this.GetComponent<RectTransform>().anchoredPosition = new Vector3(Random.Range(-290.0f, 304.0f), Random.Range(-147.0f, 123.0f), 0);
+        random = random = Random.Range(0, 2);
+        if(random==0)
+        this.GetComponent<RectTransform>().anchoredPosition = new Vector3(Random.Range(-290.0f, -190.0f), Random.Range(-147.0f, 123.0f), 0);
+        else this.GetComponent<RectTransform>().anchoredPosition = new Vector3(Random.Range(204.0f, 304.0f), Random.Range(-147.0f, 123.0f), 0);
+
         random = Random.Range(0, randomGoodDialogue.Length);
         StartCoroutine(ShowText(randomGoodDialogue[random]));
         textBox.sprite = goodDialog;
@@ -86,7 +93,11 @@ public class ExtraEmergentDialogue : MonoBehaviour
 
     public void NarrativeDialogue()
     {
-        this.GetComponent<RectTransform>().anchoredPosition = new Vector3(Random.Range(-290.0f, 304.0f), Random.Range(-147.0f, 123.0f), 0);
+        random = random = Random.Range(0, 2);
+        if (random == 0)
+            this.GetComponent<RectTransform>().anchoredPosition = new Vector3(Random.Range(-290.0f, -190.0f), Random.Range(-147.0f, 123.0f), 0);
+        else this.GetComponent<RectTransform>().anchoredPosition = new Vector3(Random.Range(204.0f, 304.0f), Random.Range(-147.0f, 123.0f), 0);
+
         random = Random.Range(0, randomNeutralDialogue.Length);
         StartCoroutine(ShowText(randomNeutralDialogue[random]));
         textBox.sprite = normalDialog;
@@ -96,7 +107,11 @@ public class ExtraEmergentDialogue : MonoBehaviour
 
     public void BadDialogue()
     {
-        this.GetComponent<RectTransform>().anchoredPosition = new Vector3(Random.Range(-290.0f, 304.0f), Random.Range(-147.0f, 123.0f), 0);
+        random = random = Random.Range(0, 2);
+        if (random == 0)
+            this.GetComponent<RectTransform>().anchoredPosition = new Vector3(Random.Range(-290.0f, -190.0f), Random.Range(-147.0f, 123.0f), 0);
+        else this.GetComponent<RectTransform>().anchoredPosition = new Vector3(Random.Range(204.0f, 304.0f), Random.Range(-147.0f, 123.0f), 0);
+
         random = Random.Range(0, randomBadDialogue.Length);
         StartCoroutine(ShowText(randomBadDialogue[random]));
         textBox.sprite = badDialog;

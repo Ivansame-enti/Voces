@@ -10,6 +10,8 @@ TagManager:
   - End
   - Dialogue
   - Obstacle
+  - Water
+  - CutScene
   layers:
   - Default
   - TransparentFX
