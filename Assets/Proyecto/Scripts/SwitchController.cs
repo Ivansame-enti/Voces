@@ -28,7 +28,7 @@ public class SwitchController : MonoBehaviour
     {
         if(collision.gameObject.tag == "Player" || collision.gameObject.tag == "Box")
         {
-            materialPush.SetColor("_EmissionColor", new Color(0, 150, 255) * 1f);
+            materialPush.SetColor("_EmissionColor", new Color(0, 150, 255) * 0.01f);
             Debug.Log("Apretado");
             if(!amc.GetAudioPlaying("Click1") && !amc.GetAudioPlaying("Click2")) amc.AudioPlay("Click1");
             isPressed = true;
