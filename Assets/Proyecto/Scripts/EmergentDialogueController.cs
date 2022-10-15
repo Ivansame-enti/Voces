@@ -129,7 +129,7 @@ public class EmergentDialogueController : MonoBehaviour
         else this.GetComponent<RectTransform>().anchoredPosition = new Vector3(Random.Range(204.0f, 304.0f), Random.Range(-147.0f, 123.0f), 0);
         random = Random.Range(0, randomNeutralDialogue.Length);
         StartCoroutine(ShowText(randomNeutralDialogue[random]));
-        //textBox.sprite = normalDialog;
+        textBox.sprite = normalDialog;
         //text.text = t;
         this.gameObject.transform.GetChild(0).gameObject.GetComponent<Animator>().Play("Dialogue", 0, 0.0f);
     }

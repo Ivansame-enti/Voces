@@ -106,7 +106,7 @@ public class PlayerPushBoxController : MonoBehaviour
         //Debug.Log(pm._speed);
         if (cubeGrabbedRight)
         {
-            Debug.Log("Hola");
+            //Debug.Log("Hola");
             pm._speed = originalVelocity / 2;
             Vector3 vector = transform.position - hit.transform.position;
             Vector3 pullDir = vector.normalized;

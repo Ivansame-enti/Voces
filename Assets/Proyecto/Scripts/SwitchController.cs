@@ -6,16 +6,16 @@ public class SwitchController : MonoBehaviour
 {
     public bool isPressed;
     private AudioManagerController amc;
-    private Animator animator;
     private Vector3 originalScale;
     private Vector3 pressedScale;
+    public Material materialPush;
     // Start is called before the first frame update
     void Start()
     {
+        materialPush.SetColor("_EmissionColor", new Color(255, 255, 255) * 0);
         originalScale = this.transform.localScale;
-        pressedScale = new Vector3(originalScale.x, originalScale.y-0.05f, originalScale.z);
+        pressedScale = new Vector3(originalScale.x, originalScale.y-0.15f, originalScale.z);
         amc = FindObjectOfType<AudioManagerController>();
-        animator = this.GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -28,6 +28,7 @@ public class SwitchController : MonoBehaviour
     {
         if(collision.gameObject.tag == "Player" || collision.gameObject.tag == "Box")
         {
+            materialPush.SetColor("_EmissionColor", new Color(0, 150, 255) * 0.01f);
             //Debug.Log("Apretado");
             if(!amc.GetAudioPlaying("Click1") && !amc.GetAudioPlaying("Click2")) amc.AudioPlay("Click1");
             isPressed = true;
@@ -43,6 +44,7 @@ public class SwitchController : MonoBehaviour
             if (!amc.GetAudioPlaying("Click2") && !amc.GetAudioPlaying("Click1")) amc.AudioPlay("Click2");
             isPressed = false;
             this.transform.localScale = originalScale;
+            materialPush.SetColor("_EmissionColor", new Color(255,255,255) * 0);
         }
     }
 

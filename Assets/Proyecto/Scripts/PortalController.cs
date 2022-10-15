@@ -12,6 +12,7 @@ public class PortalController : MonoBehaviour
     private PlayerPushBoxController ppbc;
     private PlayerMovement pm;
     private float normalSpeed;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -37,7 +38,7 @@ public class PortalController : MonoBehaviour
                 //collision.gameObject.transform.position = new Vector3(collision.gameObject.transform.position.x, collision.gameObject.transform.position.y, collision.gameObject.transform.position.z-2.0f);
             }
             else collision.gameObject.transform.parent = goodWorld.transform;
-            collision.gameObject.transform.position = new Vector3(collision.gameObject.transform.position.x, collision.gameObject.transform.position.y, collision.gameObject.transform.position.z - 1.5f);
+            collision.gameObject.transform.position = new Vector3(collision.gameObject.transform.position.x, collision.gameObject.transform.position.y, collision.gameObject.transform.position.z - 2.5f);
         }
         
         if(collision.gameObject.tag == "Player")
@@ -48,7 +49,7 @@ public class PortalController : MonoBehaviour
             ppbc.cubeGrabbedDown = false;
             pm._speed = normalSpeed;
             changeWorld.changeWorld = true;
-            //collision.gameObject.transform.position = new Vector3(collision.gameObject.transform.position.x, collision.gameObject.transform.position.y, collision.gameObject.transform.position.z - 1.5f);
+            //collision.gameObject.transform.position = new Vector3(collision.gameObject.transform.position.x, collision.gameObject.transform.position.y, collision.gameObject.transform.position.z - 1.0f);
             
         }
     }

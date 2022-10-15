@@ -35,7 +35,7 @@ public class MenuController : MonoBehaviour
                 timer -= Time.deltaTime/10;
             } else
             {
-                SceneManager.LoadScene("Puzzle2_2");
+                SceneManager.LoadScene("Puzzle2");
             }
         }
     }
