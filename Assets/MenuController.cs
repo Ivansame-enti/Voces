@@ -23,7 +23,7 @@ public class MenuController : MonoBehaviour
     void Update()
     {
         if (Input.GetKey(KeyCode.Space)){
-            Invoke("FadeOut", 1);
+            Invoke("FadeOut", 0.5f);
             ending = true;
         }
 
