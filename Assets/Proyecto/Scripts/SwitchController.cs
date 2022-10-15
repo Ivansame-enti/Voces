@@ -28,12 +28,12 @@ public class SwitchController : MonoBehaviour
     {
         if(collision.gameObject.tag == "Player" || collision.gameObject.tag == "Box")
         {
+            materialPush.SetColor("_EmissionColor", new Color(0, 150, 255) * 1f);
             Debug.Log("Apretado");
             if(!amc.GetAudioPlaying("Click1") && !amc.GetAudioPlaying("Click2")) amc.AudioPlay("Click1");
             isPressed = true;
             this.transform.localScale = pressedScale;
             //animator.Play("switch");
-            materialPush.SetColor("_EmissionColor", new Color(255, 255, 0) * 0.5f);
         }
     }
     private void OnCollisionExit(Collision collision)
