@@ -23,6 +23,7 @@ public class MiniLevelController : MonoBehaviour
     private bool endFade;
     private float volume;
     private float timer;
+    public Animator dayTextAnim;
     // Start is called before the first frame update
     void Start()
     {
@@ -80,6 +81,7 @@ public class MiniLevelController : MonoBehaviour
     {
         fadeInAnim.Play("FadeIn");
         endFade = true;
+        dayTextAnim.Play("DayText");
     }
 
 }

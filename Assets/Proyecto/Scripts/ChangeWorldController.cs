@@ -41,6 +41,7 @@ public class ChangeWorldController : MonoBehaviour
             {
                 if (Input.GetKeyDown(KeyCode.LeftShift) && !goodWorldBool)
                 {
+                    ed.timer = Random.Range(10, 20);
                     timer = 0;
                     StartCoroutine(waiter1());
 
@@ -49,6 +50,7 @@ public class ChangeWorldController : MonoBehaviour
 
                 if (Input.GetKeyDown(KeyCode.LeftShift) && goodWorldBool)
                 {
+                    ed.timer = Random.Range(10, 20);
                     timer = 0;
                     StartCoroutine(waiter2());
 

@@ -54,7 +54,7 @@ public class ExtraEmergentDialogue : MonoBehaviour
         this.gameObject.transform.GetChild(0).gameObject.GetComponent<CanvasGroup>().alpha = 0f;
         //this.gameObject.transform.GetChild(1).gameObject.SetActive(false);
         timer = 0;
-        timer = Random.Range(10, 15);
+        timer = Random.Range(7, 12);
     }
 
     // Update is called once per frame
@@ -69,7 +69,7 @@ public class ExtraEmergentDialogue : MonoBehaviour
             if (random == 0) NarrativeDialogue();
             else if (random == 1) GoodDialogue();
             else if (random >= 2) BadDialogue();
-            timer = Random.Range(10, 15);
+            timer = Random.Range(7, 12);
         }
         else
         {
