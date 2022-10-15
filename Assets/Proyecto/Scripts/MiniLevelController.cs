@@ -48,7 +48,7 @@ public class MiniLevelController : MonoBehaviour
             //Debug.Log("A");
             if (!amc.GetAudioPlaying("MainTheme")) amc.AudioPlay("MainTheme");
             amc.ChangeVolume("MainTheme", timer);
-            timer += Time.deltaTime/10;
+            timer += Time.deltaTime/7;
         }
 
         if (ndc.textCount == 3 && !flag)

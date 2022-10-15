@@ -36,7 +36,6 @@ public class EmergentDialogueController : MonoBehaviour
     };
 
     private string[] randomNeutralDialogue = new string[] {
-        "Hoy fui a comprar al super",
         "Me puedes traer un cafe?",
         "Ahora vuelvo",
         "Si, gracias",
@@ -98,7 +97,10 @@ public class EmergentDialogueController : MonoBehaviour
 
     public void GoodDialogue()
     {
-        this.GetComponent<RectTransform>().anchoredPosition = new Vector3(Random.Range(-290.0f, 304.0f), Random.Range(-147.0f, 123.0f), 0);
+        random = random = Random.Range(0, 2);
+        if (random == 0)
+            this.GetComponent<RectTransform>().anchoredPosition = new Vector3(Random.Range(-290.0f, -190.0f), Random.Range(-147.0f, 123.0f), 0);
+        else this.GetComponent<RectTransform>().anchoredPosition = new Vector3(Random.Range(204.0f, 304.0f), Random.Range(-147.0f, 123.0f), 0);
         random = Random.Range(0, randomGoodDialogue.Length);
         StartCoroutine(ShowText(randomGoodDialogue[random]));
         textBox.sprite = goodDialog;
@@ -108,7 +110,10 @@ public class EmergentDialogueController : MonoBehaviour
 
     public void GoodDialogue(string t)
     {
-        this.GetComponent<RectTransform>().anchoredPosition = new Vector3(Random.Range(-290.0f, 304.0f), Random.Range(-147.0f, 123.0f), 0);
+        random = random = Random.Range(0, 2);
+        if (random == 0)
+            this.GetComponent<RectTransform>().anchoredPosition = new Vector3(Random.Range(-290.0f, -190.0f), Random.Range(-147.0f, 123.0f), 0);
+        else this.GetComponent<RectTransform>().anchoredPosition = new Vector3(Random.Range(204.0f, 304.0f), Random.Range(-147.0f, 123.0f), 0);
         StartCoroutine(ShowText(t));
         textBox.sprite = goodDialog;
         //text.text = t;
@@ -117,7 +122,10 @@ public class EmergentDialogueController : MonoBehaviour
 
     public void NarrativeDialogue()
     {
-        this.GetComponent<RectTransform>().anchoredPosition = new Vector3(Random.Range(-290.0f, 304.0f), Random.Range(-147.0f, 123.0f), 0);
+        random = random = Random.Range(0, 2);
+        if (random == 0)
+            this.GetComponent<RectTransform>().anchoredPosition = new Vector3(Random.Range(-290.0f, -190.0f), Random.Range(-147.0f, 123.0f), 0);
+        else this.GetComponent<RectTransform>().anchoredPosition = new Vector3(Random.Range(204.0f, 304.0f), Random.Range(-147.0f, 123.0f), 0);
         random = Random.Range(0, randomNeutralDialogue.Length);
         StartCoroutine(ShowText(randomNeutralDialogue[random]));
         textBox.sprite = normalDialog;
@@ -127,7 +135,10 @@ public class EmergentDialogueController : MonoBehaviour
 
     public void NarrativeDialogue(string t)
     {
-        this.GetComponent<RectTransform>().anchoredPosition = new Vector3(Random.Range(-290.0f, 304.0f), Random.Range(-147.0f, 123.0f), 0);
+        random = random = Random.Range(0, 2);
+        if (random == 0)
+            this.GetComponent<RectTransform>().anchoredPosition = new Vector3(Random.Range(-290.0f, -190.0f), Random.Range(-147.0f, 123.0f), 0);
+        else this.GetComponent<RectTransform>().anchoredPosition = new Vector3(Random.Range(204.0f, 304.0f), Random.Range(-147.0f, 123.0f), 0);
         StartCoroutine(ShowText(t));
         textBox.sprite = normalDialog;
         //text.text = t;
@@ -136,7 +147,10 @@ public class EmergentDialogueController : MonoBehaviour
 
     public void BadDialogue()
     {
-        this.GetComponent<RectTransform>().anchoredPosition = new Vector3(Random.Range(-290.0f, 304.0f), Random.Range(-147.0f, 123.0f), 0);
+        random = random = Random.Range(0, 2);
+        if (random == 0)
+            this.GetComponent<RectTransform>().anchoredPosition = new Vector3(Random.Range(-290.0f, -190.0f), Random.Range(-147.0f, 123.0f), 0);
+        else this.GetComponent<RectTransform>().anchoredPosition = new Vector3(Random.Range(204.0f, 304.0f), Random.Range(-147.0f, 123.0f), 0);
         random = Random.Range(0, randomBadDialogue.Length);
         StartCoroutine(ShowText(randomBadDialogue[random]));
         textBox.sprite = badDialog;
@@ -146,7 +160,10 @@ public class EmergentDialogueController : MonoBehaviour
 
     public void BadDialogue(string t)
     {
-        this.GetComponent<RectTransform>().anchoredPosition = new Vector3(Random.Range(-290.0f, 304.0f), Random.Range(-147.0f, 123.0f), 0);
+        random = random = Random.Range(0, 2);
+        if (random == 0)
+            this.GetComponent<RectTransform>().anchoredPosition = new Vector3(Random.Range(-290.0f, -190.0f), Random.Range(-147.0f, 123.0f), 0);
+        else this.GetComponent<RectTransform>().anchoredPosition = new Vector3(Random.Range(204.0f, 304.0f), Random.Range(-147.0f, 123.0f), 0);
         StartCoroutine(ShowText(t));
         textBox.sprite = badDialog;
         //text.text = t;
