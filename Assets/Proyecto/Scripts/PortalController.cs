@@ -42,7 +42,10 @@ public class PortalController : MonoBehaviour
         
         if(collision.gameObject.tag == "Player")
         {
-            ppbc.cubeGrabbed = false;
+            ppbc.cubeGrabbedRight = false;
+            ppbc.cubeGrabbedLeft = false;
+            ppbc.cubeGrabbedUp = false;
+            ppbc.cubeGrabbedDown = false;
             pm._speed = normalSpeed;
             changeWorld.changeWorld = true;
             //collision.gameObject.transform.position = new Vector3(collision.gameObject.transform.position.x, collision.gameObject.transform.position.y, collision.gameObject.transform.position.z - 1.5f);

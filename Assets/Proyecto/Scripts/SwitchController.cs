@@ -28,7 +28,7 @@ public class SwitchController : MonoBehaviour
     {
         if(collision.gameObject.tag == "Player" || collision.gameObject.tag == "Box")
         {
-            Debug.Log("Apretado");
+            //Debug.Log("Apretado");
             if(!amc.GetAudioPlaying("Click1") && !amc.GetAudioPlaying("Click2")) amc.AudioPlay("Click1");
             isPressed = true;
             this.transform.localScale = pressedScale;
@@ -39,7 +39,7 @@ public class SwitchController : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player" || collision.gameObject.tag == "Box")
         {
-            Debug.Log("No Apretado");
+            //Debug.Log("No Apretado");
             if (!amc.GetAudioPlaying("Click2") && !amc.GetAudioPlaying("Click1")) amc.AudioPlay("Click2");
             isPressed = false;
             this.transform.localScale = originalScale;

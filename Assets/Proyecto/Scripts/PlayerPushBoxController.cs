@@ -14,7 +14,10 @@ public class PlayerPushBoxController : MonoBehaviour
     Ray ray3;
     Ray ray4;
     RaycastHit hit;
-    public bool cubeGrabbed=false;
+    public bool cubeGrabbedRight=false;
+    public bool cubeGrabbedLeft = false;
+    public bool cubeGrabbedUp = false;
+    public bool cubeGrabbedDown = false;
     PlayerMovement pm;
     float originalVelocity;
     public float pullSpeed;
@@ -41,7 +44,7 @@ public class PlayerPushBoxController : MonoBehaviour
         ray4.origin = transform.position;
         ray4.direction = Vector3.forward;
 
-        if (!cubeGrabbed)
+        if (!cubeGrabbedRight && !cubeGrabbedLeft && !cubeGrabbedUp && !cubeGrabbedDown)
         {
             if (Input.GetAxis("Horizontal") > 0)
             {
@@ -49,7 +52,7 @@ public class PlayerPushBoxController : MonoBehaviour
 
                 if (Physics.Raycast(ray, out hit, distance) && hit.transform.tag == "Box" && Input.GetKey(KeyCode.Space))
                 {
-                    cubeGrabbed = true;
+                    cubeGrabbedRight = true;
                     //Debug.Log(hit.distance);
                 }
             }
@@ -59,7 +62,7 @@ public class PlayerPushBoxController : MonoBehaviour
 
                 if (Physics.Raycast(ray2, out hit, distance) && hit.transform.tag == "Box" && Input.GetKey(KeyCode.Space))
                 {
-                    cubeGrabbed = true;
+                    cubeGrabbedLeft = true;
                     //Debug.Log(hit.distance);
                 }
             }
@@ -69,7 +72,7 @@ public class PlayerPushBoxController : MonoBehaviour
 
                 if (Physics.Raycast(ray3, out hit, distance) && hit.transform.tag == "Box" && Input.GetKey(KeyCode.Space))
                 {
-                    cubeGrabbed = true;
+                    cubeGrabbedDown = true;
                     //Debug.Log(hit.distance);
                 }
             }
@@ -79,7 +82,7 @@ public class PlayerPushBoxController : MonoBehaviour
 
                 if (Physics.Raycast(ray4, out hit, distance) && hit.transform.tag == "Box" && Input.GetKey(KeyCode.Space))
                 {
-                    cubeGrabbed = true;
+                    cubeGrabbedUp = true;
                     //Debug.Log(hit.distance);
                 }
             }
@@ -87,29 +90,65 @@ public class PlayerPushBoxController : MonoBehaviour
             {
                 if (Physics.Raycast(ray, out hit, distance) && hit.transform.tag == "Box" && Input.GetKey(KeyCode.Space))
                 {
-                    cubeGrabbed = true;
+                    cubeGrabbedRight = true;
                 } else if (Physics.Raycast(ray2, out hit, distance) && hit.transform.tag == "Box" && Input.GetKey(KeyCode.Space))
                 {
-                    cubeGrabbed = true;
+                    cubeGrabbedLeft = true;
                 } else if (Physics.Raycast(ray3, out hit, distance) && hit.transform.tag == "Box" && Input.GetKey(KeyCode.Space))
                 {
-                    cubeGrabbed = true;
+                    cubeGrabbedDown = true;
                 } else if (Physics.Raycast(ray4, out hit, distance) && hit.transform.tag == "Box" && Input.GetKey(KeyCode.Space))
                 {
-                    cubeGrabbed = true;
+                    cubeGrabbedUp = true;
                 }
             }
         }
         //Debug.Log(pm._speed);
-        if (cubeGrabbed)
+        if (cubeGrabbedRight)
+        {
+            Debug.Log("Hola");
+            pm._speed = originalVelocity / 2;
+            Vector3 vector = transform.position - hit.transform.position;
+            Vector3 pullDir = vector.normalized;
+            if (Input.GetAxis("Horizontal") < 0) hit.rigidbody.velocity += pullDir * (pullSpeed * Time.deltaTime);
+            if (Input.GetKeyUp(KeyCode.Space))
+            {
+                cubeGrabbedRight = false;
+                pm._speed = originalVelocity;
+            }
+        } else if (cubeGrabbedLeft)
         {
             pm._speed = originalVelocity / 2;
             Vector3 vector = transform.position - hit.transform.position;
             Vector3 pullDir = vector.normalized;
-            if (Input.GetAxis("Horizontal") != 0 || Input.GetAxis("Vertical") != 0) hit.rigidbody.velocity += pullDir * (pullSpeed * Time.deltaTime);
+            if (Input.GetAxis("Horizontal") > 0) hit.rigidbody.velocity += pullDir * (pullSpeed * Time.deltaTime);
             if (Input.GetKeyUp(KeyCode.Space))
             {
-                cubeGrabbed = false;
+                cubeGrabbedLeft = false;
+                pm._speed = originalVelocity;
+            }
+        }
+        else if (cubeGrabbedDown)
+        {
+            pm._speed = originalVelocity / 2;
+            Vector3 vector = transform.position - hit.transform.position;
+            Vector3 pullDir = vector.normalized;
+            if (Input.GetAxis("Vertical") > 0) hit.rigidbody.velocity += pullDir * (pullSpeed * Time.deltaTime);
+            if (Input.GetKeyUp(KeyCode.Space))
+            {
+                cubeGrabbedDown = false;
+                pm._speed = originalVelocity;
+            }
+        }
+        else if (cubeGrabbedUp)
+        {
+            pm._speed = originalVelocity / 2;
+            Vector3 vector = transform.position - hit.transform.position;
+            Vector3 pullDir = vector.normalized;
+            if (Input.GetAxis("Vertical") < 0) hit.rigidbody.velocity += pullDir * (pullSpeed * Time.deltaTime);
+            if (Input.GetKeyUp(KeyCode.Space))
+            {
+                cubeGrabbedUp = false;
                 pm._speed = originalVelocity;
             }
         }

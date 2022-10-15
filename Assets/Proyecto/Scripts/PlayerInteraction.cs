@@ -1,3 +1,4 @@
+using Cinemachine;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -10,9 +11,13 @@ public class PlayerInteraction : MonoBehaviour
     public GameObject box;
     private Vector3 boxPos;
     public GameObject[] obstacle;
+    public GameObject camera, cameraPos;
+    public NormalDialogueController ndc;
+    private bool firstTime;
     // Start is called before the first frame update
     void Start()
     {
+        firstTime = true;
         boxPos = box.transform.position;
         hasPush = false;
     }
@@ -39,6 +44,14 @@ public class PlayerInteraction : MonoBehaviour
         {
             for(int i=0; i<obstacle.Length;i++)
                 obstacle[i].SetActive(false);
+        }
+
+        if (other.gameObject.tag == "CutScene" && firstTime)
+        {
+            camera.GetComponent<CinemachineBrain>().enabled = false;
+            camera.transform.position = cameraPos.transform.position;
+            ndc.dialogPlaying = true;
+            firstTime = false;
         }
     }
 

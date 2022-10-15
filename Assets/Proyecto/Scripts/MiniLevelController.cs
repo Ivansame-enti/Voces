@@ -18,23 +18,47 @@ public class MiniLevelController : MonoBehaviour
     public GameObject camera;
     public GameObject pingu;
     private bool flag;
+    private AudioManagerController amc;
+    public Animator fadeInAnim;
+    private bool endFade;
+    private float volume;
+    private float timer;
+    public Animator dayTextAnim;
     // Start is called before the first frame update
     void Start()
     {
+        amc = FindObjectOfType<AudioManagerController>();
+        volume = amc.GetVolume("MainTheme");
+        endFade = false;
+        ndc.dialogPlaying = false;
         flag = false;
         player = GameObject.FindGameObjectWithTag("Player").transform;
+        amc.AudioStop("MainTheme");
+        //amc.ChangeVolume("MainTheme", 0);
+        Invoke("FadeIn", 1);
+        timer = 0;
     }
 
     // Update is called once per frame
     void Update()
     {
+        //ndc.dialogPlaying = false;
         //door2.transform.eulerAngles = Vector3.Lerp(transform.eulerAngles, targetAngles, 1.0f * Time.deltaTime);
+        if(endFade && timer < volume)
+        {
+            //Debug.Log("A");
+            if (!amc.GetAudioPlaying("MainTheme")) amc.AudioPlay("MainTheme");
+            amc.ChangeVolume("MainTheme", timer);
+            timer += Time.deltaTime/7;
+        }
+
         if (ndc.textCount == 3 && !flag)
         {
             camera.GetComponent<CinemachineBrain>().enabled = true;
             pingu.transform.position = new Vector3(pingu.transform.position.x, pingu.transform.position.y, pingu.transform.position.z+3.0f);
             flag = true;
-        } else if (ndc.textCount != 3) ndc.dialogPlaying = true;
+        } 
+
         if (player.position.y < -10.0f) player.position = respawn.position;
         if (sw1.isPressed && sw2.isPressed && sw3.isPressed)
         {
@@ -52,4 +76,12 @@ public class MiniLevelController : MonoBehaviour
             door2.transform.localRotation = Quaternion.Euler(0, targetAngle2, 0);
         }
     }
+
+    void FadeIn()
+    {
+        fadeInAnim.Play("FadeIn");
+        endFade = true;
+        dayTextAnim.Play("DayText");
+    }
+
 }

@@ -34,7 +34,7 @@ public class AudioManagerController : MonoBehaviour
         {
             AudioPlay("MenuTheme");
         }
-        else
+        else if(sceneName != "Puzzle2_2")
         {
             AudioPlay("MainTheme");
         }
@@ -62,6 +62,28 @@ public class AudioManagerController : MonoBehaviour
             return;
         }
         a.source.pitch = p;
+    }
+
+    public float GetVolume(string name)
+    {
+        Sound a = Array.Find(audios, audio => audio.name == name);
+        if (a == null)
+        {
+            Debug.Log("Audio not found");
+            return 0;
+        }
+        return a.source.volume;
+    }
+
+    public void ChangeVolume(string name, float p)
+    {
+        Sound a = Array.Find(audios, audio => audio.name == name);
+        if (a == null)
+        {
+            Debug.Log("Audio not found");
+            return;
+        }
+        a.source.volume = p;
     }
 
     public void AudioPause(string name)

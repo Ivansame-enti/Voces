@@ -18,6 +18,7 @@ public class ChangeWorldController : MonoBehaviour
     public PortalController portalController;
     public bool changeWorld;
     private NormalDialogueController ndc;
+    private float originalY;
 
     // Start is called before the first frame update
     void Start()
@@ -40,6 +41,7 @@ public class ChangeWorldController : MonoBehaviour
             {
                 if (Input.GetKeyDown(KeyCode.LeftShift) && !goodWorldBool)
                 {
+                    ed.timer = Random.Range(10, 20);
                     timer = 0;
                     StartCoroutine(waiter1());
 
@@ -48,6 +50,7 @@ public class ChangeWorldController : MonoBehaviour
 
                 if (Input.GetKeyDown(KeyCode.LeftShift) && goodWorldBool)
                 {
+                    ed.timer = Random.Range(10, 20);
                     timer = 0;
                     StartCoroutine(waiter2());
 
@@ -139,7 +142,8 @@ public class ChangeWorldController : MonoBehaviour
         badWorld.SetActive(false);
         amc.ChangePitch("MainTheme", 1.0f);
 
-        this.transform.position = new Vector3(this.transform.position.x, this.transform.position.y + 0.2f, this.transform.position.z);
+        originalY = this.transform.position.y;
+        this.transform.position = new Vector3(this.transform.position.x, this.transform.position.y + 0.5f, this.transform.position.z);
 
         RaycastHit hit;
 
@@ -149,7 +153,7 @@ public class ChangeWorldController : MonoBehaviour
             Debug.Log("wsdasd");
             //aboutToCollide = true;
             //distanceToCollision = hit.distance;
-        }
+        } else this.transform.position = new Vector3(this.transform.position.x, originalY, this.transform.position.z);
     }
 
     IEnumerator BadGlitchEffect()
@@ -175,16 +179,17 @@ public class ChangeWorldController : MonoBehaviour
         badWorld.SetActive(true);
         amc.ChangePitch("MainTheme", 0.3f);
 
-        this.transform.position = new Vector3(this.transform.position.x, this.transform.position.y + 0.2f, this.transform.position.z);
+        originalY = this.transform.position.y;
+        this.transform.position = new Vector3(this.transform.position.x, this.transform.position.y + 0.5f, this.transform.position.z);
 
         RaycastHit hit;
 
         if (this.GetComponent<Rigidbody>().SweepTest(transform.position, out hit, 10.0f))
         {
             this.transform.position = new Vector3(this.transform.position.x, this.transform.position.y + 1.0f, this.transform.position.z);
-            Debug.Log("wsdasd");
+            //Debug.Log("wsdasd");
             //aboutToCollide = true;
             //distanceToCollision = hit.distance;
-        }
+        } else this.transform.position = new Vector3(this.transform.position.x, originalY, this.transform.position.z);
     }
 }
