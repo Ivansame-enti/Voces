@@ -2,12 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 using UnityEngine.UIElements;
 
 public class PauseController : MonoBehaviour
 {
-    public GameObject pauseUI;
+    public GameObject pauseUI,continueButtonn;
     private bool pauseState;
     // Start is called before the first frame update
     void Start()
@@ -23,6 +24,8 @@ public class PauseController : MonoBehaviour
         {
             pauseState = true;
             pauseUI.SetActive(true);
+            EventSystem.current.SetSelectedGameObject(null);
+            EventSystem.current.SetSelectedGameObject(continueButtonn);
             Time.timeScale = 0f;
         }
         else if (Input.GetKeyDown(KeyCode.Escape) && pauseState == true)
