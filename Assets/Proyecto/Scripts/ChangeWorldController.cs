@@ -118,7 +118,6 @@ public class ChangeWorldController : MonoBehaviour
         StartCoroutine(BadGlitchEffect());
         goodWorldBool = false;
     }
-
     IEnumerator GoodGlitchEffect()
     {
         ag.enabled = true;
@@ -132,28 +131,31 @@ public class ChangeWorldController : MonoBehaviour
             yield return new WaitForSeconds(.1f);
         }
 
+        goodWorld.SetActive(true);
+        badWorld.SetActive(false);
+        originalY = this.transform.position.y;
+        this.transform.position = new Vector3(this.transform.position.x, this.transform.position.y + 5.0f, this.transform.position.z);
+
+        RaycastHit hit;
+
+        if (this.GetComponent<Rigidbody>().SweepTest(transform.position, out hit, 10.0f))
+        {
+            this.transform.position = new Vector3(this.transform.position.x, originalY + 1.0f, this.transform.position.z);
+            Debug.Log("wsdasd");
+            //aboutToCollide = true;
+            //distanceToCollision = hit.distance;
+        }
+        else this.transform.position = new Vector3(this.transform.position.x, originalY, this.transform.position.z);
         dg.intensity = 0;
         ag.scanLineJitter = 0;
         ag.verticalJump = 0;
         ag.horizontalShake = 0;
         ag.colorDrift = 0;
         ag.enabled = false;
-        goodWorld.SetActive(true);
-        badWorld.SetActive(false);
+
         amc.ChangePitch("MainTheme", 1.0f);
 
-        originalY = this.transform.position.y;
-        this.transform.position = new Vector3(this.transform.position.x, this.transform.position.y + 0.5f, this.transform.position.z);
 
-        RaycastHit hit;
-
-        if (this.GetComponent<Rigidbody>().SweepTest(transform.position, out hit, 10.0f))
-        {
-            this.transform.position = new Vector3(this.transform.position.x, this.transform.position.y + 1.0f, this.transform.position.z);
-            Debug.Log("wsdasd");
-            //aboutToCollide = true;
-            //distanceToCollision = hit.distance;
-        } else this.transform.position = new Vector3(this.transform.position.x, originalY, this.transform.position.z);
     }
 
     IEnumerator BadGlitchEffect()
@@ -166,30 +168,34 @@ public class ChangeWorldController : MonoBehaviour
             ag.verticalJump = alpha;
             ag.horizontalShake = alpha;
             ag.colorDrift = alpha;
+
             yield return new WaitForSeconds(.1f);
         }
 
+        goodWorld.SetActive(false);
+        badWorld.SetActive(true);
+        originalY = this.transform.position.y;
+        this.transform.position = new Vector3(this.transform.position.x, this.transform.position.y + 5.0f, this.transform.position.z);
+
+        RaycastHit hit;
+
+        if (this.GetComponent<Rigidbody>().SweepTest(transform.position, out hit, 10.0f))
+        {
+            this.transform.position = new Vector3(this.transform.position.x, originalY + 1.0f, this.transform.position.z);
+            //Debug.Log("wsdasd");
+            //aboutToCollide = true;
+            //distanceToCollision = hit.distance;
+        }
+        else this.transform.position = new Vector3(this.transform.position.x, originalY, this.transform.position.z);
         dg.intensity = 0;
         ag.scanLineJitter = 0;
         ag.verticalJump = 0;
         ag.horizontalShake = 0;
         ag.colorDrift = 0;
         ag.enabled = false;
-        goodWorld.SetActive(false);
-        badWorld.SetActive(true);
+
         amc.ChangePitch("MainTheme", 0.3f);
 
-        originalY = this.transform.position.y;
-        this.transform.position = new Vector3(this.transform.position.x, this.transform.position.y + 0.5f, this.transform.position.z);
 
-        RaycastHit hit;
-
-        if (this.GetComponent<Rigidbody>().SweepTest(transform.position, out hit, 10.0f))
-        {
-            this.transform.position = new Vector3(this.transform.position.x, this.transform.position.y + 1.0f, this.transform.position.z);
-            //Debug.Log("wsdasd");
-            //aboutToCollide = true;
-            //distanceToCollision = hit.distance;
-        } else this.transform.position = new Vector3(this.transform.position.x, originalY, this.transform.position.z);
     }
 }
