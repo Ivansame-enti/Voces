@@ -12,7 +12,7 @@ public class MiniLevelController : MonoBehaviour
     //public SwitchController sw4;
     private Transform player;
     public Transform respawn;
-    public GameObject door1, door2;
+    public GameObject door1, door2,panel;
     private float targetAngle=0.0f, targetAngle2=180.0f;
     public NormalDialogueController ndc;
     public GameObject camera;
@@ -27,6 +27,7 @@ public class MiniLevelController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        panel.SetActive(true);
         amc = FindObjectOfType<AudioManagerController>();
         volume = amc.GetVolume("MainTheme");
         endFade = false;
