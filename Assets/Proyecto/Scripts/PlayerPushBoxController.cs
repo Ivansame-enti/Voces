@@ -21,6 +21,7 @@ public class PlayerPushBoxController : MonoBehaviour
     PlayerMovement pm;
     float originalVelocity;
     public float pullSpeed;
+    public Animator animation;
     // Start is called before the first frame update
     void Start()
     {
@@ -106,6 +107,7 @@ public class PlayerPushBoxController : MonoBehaviour
         //Debug.Log(pm._speed);
         if (cubeGrabbedRight)
         {
+            animation.Play("boxRightAnim");
             //Debug.Log("Hola");
             pm._speed = originalVelocity / 2;
             Vector3 vector = transform.position - hit.transform.position;
@@ -118,6 +120,7 @@ public class PlayerPushBoxController : MonoBehaviour
             }
         } else if (cubeGrabbedLeft)
         {
+            animation.Play("boxLeftAnim");
             pm._speed = originalVelocity / 2;
             Vector3 vector = transform.position - hit.transform.position;
             Vector3 pullDir = vector.normalized;
@@ -130,6 +133,7 @@ public class PlayerPushBoxController : MonoBehaviour
         }
         else if (cubeGrabbedDown)
         {
+            animation.Play("boxDownAnim");
             pm._speed = originalVelocity / 2;
             Vector3 vector = transform.position - hit.transform.position;
             Vector3 pullDir = vector.normalized;
@@ -142,6 +146,7 @@ public class PlayerPushBoxController : MonoBehaviour
         }
         else if (cubeGrabbedUp)
         {
+            animation.Play("boxUpAnim");
             pm._speed = originalVelocity / 2;
             Vector3 vector = transform.position - hit.transform.position;
             Vector3 pullDir = vector.normalized;
