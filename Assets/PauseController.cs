@@ -10,9 +10,11 @@ public class PauseController : MonoBehaviour
 {
     public GameObject pauseUI,continueButtonn;
     private bool pauseState;
+    private AudioManagerController amc;
     // Start is called before the first frame update
     void Start()
     {
+        amc = FindObjectOfType<AudioManagerController>();
         pauseUI.SetActive(false);
         pauseState = false;
     }
@@ -20,6 +22,10 @@ public class PauseController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(pauseState == true)
+        {
+            if (amc.GetAudioPlaying("FootSteps")) amc.AudioStop("FootSteps");
+        }
         if (Input.GetKeyDown(KeyCode.Escape) && pauseState == false)
         {
             pauseState = true;
@@ -30,6 +36,7 @@ public class PauseController : MonoBehaviour
         }
         else if (Input.GetKeyDown(KeyCode.Escape) && pauseState == true)
         {
+    
             pauseState = false;
             pauseUI.SetActive(false);
             Time.timeScale = 1;

@@ -14,9 +14,11 @@ public class PlayerInteraction : MonoBehaviour
     public GameObject camera, cameraPos;
     public NormalDialogueController ndc;
     private bool firstTime;
+    private AudioManagerController amc;
     // Start is called before the first frame update
     void Start()
     {
+        amc = FindObjectOfType<AudioManagerController>();
         firstTime = true;
         boxPos = box.transform.position;
         hasPush = false;
@@ -61,7 +63,7 @@ public class PlayerInteraction : MonoBehaviour
         {
             if (Input.GetKey(KeyCode.Space) /*&& !hasPush*/)
             {
-                
+                if(!amc.GetAudioPlaying("Click2")) amc.AudioPlay("Click2");
                 box.SetActive(true);
                 box.GetComponent<Rigidbody>().velocity = new Vector3(0.0f,0.0f,0.0f);
                 box.transform.position = boxPos;

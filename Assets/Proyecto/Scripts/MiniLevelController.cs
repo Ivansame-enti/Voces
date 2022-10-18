@@ -38,6 +38,7 @@ public class MiniLevelController : MonoBehaviour
         //amc.ChangeVolume("MainTheme", 0);
         Invoke("FadeIn", 1);
         timer = 0;
+        amc.AudioPlay("Birds");
     }
 
     // Update is called once per frame

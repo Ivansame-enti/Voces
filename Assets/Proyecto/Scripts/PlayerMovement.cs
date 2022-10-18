@@ -10,6 +10,7 @@ public class PlayerMovement : MonoBehaviour
     private NormalDialogueController ndc;
     private PlayerPushBoxController ppc;
     private Vector3 vel = new Vector3(0, 0, 0);
+    private float random;
     private void Start()
     {
         ppc = this.GetComponent<PlayerPushBoxController>();
@@ -31,7 +32,12 @@ public class PlayerMovement : MonoBehaviour
             vel.y = _rb.velocity.y;
             _rb.velocity = vel;
 
-            if ((Input.GetAxis("Horizontal") != 0 || Input.GetAxis("Vertical") != 0) && !amc.GetAudioPlaying("FootSteps")) amc.AudioPlay("FootSteps");
+            if ((Input.GetAxis("Horizontal") != 0 || Input.GetAxis("Vertical") != 0) && !amc.GetAudioPlaying("FootSteps"))
+            {
+                random = Random.Range(0.7f, 1.5f);
+                amc.ChangePitch("FootSteps", random);
+                amc.AudioPlay("FootSteps");
+            }
             else if ((Input.GetAxis("Horizontal") == 0 && Input.GetAxis("Vertical") == 0) && amc.GetAudioPlaying("FootSteps")) amc.AudioStop("FootSteps");
 
             animator.SetFloat("Horizontal", vel.x);

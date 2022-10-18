@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerPushBoxController : MonoBehaviour
 {
     public float distance;
+   
     //public LayerMask layerMask;
     //bool hit;
     GameObject box;
@@ -21,6 +22,8 @@ public class PlayerPushBoxController : MonoBehaviour
     PlayerMovement pm;
     float originalVelocity;
     public float pullSpeed;
+    public Animator animation;
+    public bool mvBR,mvBL,mvBD,mvBU;
     // Start is called before the first frame update
     void Start()
     {
@@ -102,10 +105,46 @@ public class PlayerPushBoxController : MonoBehaviour
                     cubeGrabbedUp = true;
                 }
             }
+            if (Physics.Raycast(ray, out hit, distance) && hit.transform.tag == "Box")
+            {
+                mvBR = true;
+            }
+            else if (Physics.Raycast(ray2, out hit, distance) && hit.transform.tag == "Box")
+            {
+                mvBL = true;
+
+            }
+            else if (Physics.Raycast(ray3, out hit, distance) && hit.transform.tag == "Box")
+            {
+                mvBD = true;
+
+            }
+            else if (Physics.Raycast(ray4, out hit, distance) && hit.transform.tag == "Box")
+            {
+                mvBU = true;
+            }
+            else
+            {
+                mvBR = false;
+                mvBL = false;
+                mvBD = false;
+                mvBU = false;
+                animation.SetBool("PushR", false);
+                animation.SetBool("PushL", false);
+                animation.SetBool("PushD", false);
+                animation.SetBool("PushU", false);
+            }
         }
+        //Debug.Log(mvBR);
+        if (mvBR == true) animation.SetBool("PushR", true);
+        else if (mvBL == true) animation.SetBool("PushL", true);
+        else if (mvBD == true) animation.SetBool("PushD", true);
+        else if (mvBU == true) animation.SetBool("PushU", true);
+
         //Debug.Log(pm._speed);
         if (cubeGrabbedRight)
         {
+            animation.Play("boxRightAnim");
             //Debug.Log("Hola");
             pm._speed = originalVelocity / 2;
             Vector3 vector = transform.position - hit.transform.position;
@@ -118,6 +157,7 @@ public class PlayerPushBoxController : MonoBehaviour
             }
         } else if (cubeGrabbedLeft)
         {
+            animation.Play("boxLeftAnim");
             pm._speed = originalVelocity / 2;
             Vector3 vector = transform.position - hit.transform.position;
             Vector3 pullDir = vector.normalized;
@@ -130,6 +170,7 @@ public class PlayerPushBoxController : MonoBehaviour
         }
         else if (cubeGrabbedDown)
         {
+            animation.Play("boxDownAnim");
             pm._speed = originalVelocity / 2;
             Vector3 vector = transform.position - hit.transform.position;
             Vector3 pullDir = vector.normalized;
@@ -142,6 +183,7 @@ public class PlayerPushBoxController : MonoBehaviour
         }
         else if (cubeGrabbedUp)
         {
+            animation.Play("boxUpAnim");
             pm._speed = originalVelocity / 2;
             Vector3 vector = transform.position - hit.transform.position;
             Vector3 pullDir = vector.normalized;
