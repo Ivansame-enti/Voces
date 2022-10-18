@@ -19,6 +19,7 @@ public class ChangeWorldController : MonoBehaviour
     public bool changeWorld;
     private NormalDialogueController ndc;
     private float originalY;
+    private float timer2;
 
     // Start is called before the first frame update
     void Start()
@@ -30,6 +31,7 @@ public class ChangeWorldController : MonoBehaviour
         dg = mainCamera.GetComponent<DigitalGlitch>();
         ag = mainCamera.GetComponent<AnalogGlitch>();
         timer = changeCD;
+        timer2 = Random.Range(2.0f, 7.0f);
     }
 
     // Update is called once per frame
@@ -81,6 +83,16 @@ public class ChangeWorldController : MonoBehaviour
             }
         }
         else timer += Time.deltaTime;
+
+        if(!goodWorldBool)
+        {
+            if (timer2 <= 0)
+            {
+                if (!amc.GetAudioPlaying("Storm")) amc.AudioPlay("Storm");
+                timer2 = Random.Range(2.0f, 7.0f);
+            }
+            else timer2 -= Time.deltaTime;
+        }
     }
 
     /* void SendGoodMessage()
@@ -153,8 +165,10 @@ public class ChangeWorldController : MonoBehaviour
         ag.colorDrift = 0;
         ag.enabled = false;
 
+        amc.AudioPlay("Birds");
+        if(amc.GetAudioPlaying("Storm")) amc.AudioStop("Storm");
         amc.ChangePitch("MainTheme", 1.0f);
-
+        timer2 = Random.Range(2.0f, 7.0f);
 
     }
 
@@ -194,6 +208,7 @@ public class ChangeWorldController : MonoBehaviour
         ag.colorDrift = 0;
         ag.enabled = false;
 
+        amc.AudioStop("Birds");
         amc.ChangePitch("MainTheme", 0.3f);
 
 

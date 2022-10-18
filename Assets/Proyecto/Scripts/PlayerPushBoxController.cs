@@ -135,7 +135,7 @@ public class PlayerPushBoxController : MonoBehaviour
                 animation.SetBool("PushU", false);
             }
         }
-        Debug.Log(mvBR);
+        //Debug.Log(mvBR);
         if (mvBR == true) animation.SetBool("PushR", true);
         else if (mvBL == true) animation.SetBool("PushL", true);
         else if (mvBD == true) animation.SetBool("PushD", true);
