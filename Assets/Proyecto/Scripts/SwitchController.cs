@@ -36,6 +36,18 @@ public class SwitchController : MonoBehaviour
             //animator.Play("switch");
         }
     }
+
+    private void OnCollisionStay(Collision collision)
+    {
+        if (collision.gameObject.tag == "Player" || collision.gameObject.tag == "Box")
+        {
+            materialPush.SetColor("_EmissionColor", new Color(0, 150, 255) * 0.01f);
+            isPressed = true;
+            this.transform.localScale = pressedScale;
+            //animator.Play("switch");
+        }
+    }
+
     private void OnCollisionExit(Collision collision)
     {
         if (collision.gameObject.tag == "Player" || collision.gameObject.tag == "Box")
